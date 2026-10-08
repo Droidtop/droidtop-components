@@ -1,0 +1,2565 @@
+{
+ "about": "Files droidtop-components re-hosts unmodified. Seeded 2026-10-08 with exactly what droidtop users could get through GameNative's component list and download host.",
+ "files": [
+  {
+   "group": "base",
+   "name": "imagefs_bionic.txz",
+   "from": "https://downloads.gamenative.app/imagefs_bionic.txz",
+   "licence": "Mixed open-source (GameNative/Winlator base system image)",
+   "path": "imagefs_bionic.txz"
+  },
+  {
+   "group": "base",
+   "name": "imagefs_gamenative.txz",
+   "from": "https://downloads.gamenative.app/imagefs_gamenative.txz",
+   "licence": "Mixed open-source (GameNative/Winlator base system image)",
+   "path": "imagefs_gamenative.txz"
+  },
+  {
+   "group": "base",
+   "name": "proton-9.0-arm64ec.txz",
+   "from": "https://downloads.gamenative.app/proton-9.0-arm64ec.txz",
+   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "path": "proton-9.0-arm64ec.txz"
+  },
+  {
+   "group": "base",
+   "name": "proton-9.0-x86_64.txz",
+   "from": "https://downloads.gamenative.app/proton-9.0-x86_64.txz",
+   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "path": "proton-9.0-x86_64.txz"
+  },
+  {
+   "group": "box64",
+   "name": "box64-0.4.4.wcp",
+   "from": "https://downloads.gamenative.app/box64-0.4.4.wcp",
+   "licence": "MIT (Box64)",
+   "items": [
+    {
+     "type": "box64",
+     "id": "0.4.4-1",
+     "name": "Box64 0.4.4",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "box64",
+   "name": "wowbox64-0.3.6.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/WOWBOX64/wowbox64-0.3.6.wcp",
+   "licence": "MIT (Box64)",
+   "items": [
+    {
+     "type": "wowbox64",
+     "id": "0.3.6-0",
+     "name": "WOWBox64 0.3.6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "box64",
+   "name": "Wowbox64-0.4.4.wcp",
+   "from": "https://downloads.gamenative.app/Wowbox64-0.4.4.wcp",
+   "licence": "MIT (Box64)",
+   "items": [
+    {
+     "type": "wowbox64",
+     "id": "0.4.4-1",
+     "name": "WOWBox64 0.4.4",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "container-files",
+   "name": "container_pattern_common_20260821.tzst",
+   "from": "https://downloads.gamenative.app/container_files/container_pattern_common_20260821.tzst",
+   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "path": "container_files/container_pattern_common_20260821.tzst"
+  },
+  {
+   "group": "container-files",
+   "name": "container_pattern_gamenative.tzst",
+   "from": "https://downloads.gamenative.app/container_files/container_pattern_gamenative.tzst",
+   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "path": "container_files/container_pattern_gamenative.tzst"
+  },
+  {
+   "group": "container-files",
+   "name": "extras.tzst",
+   "from": "https://downloads.gamenative.app/container_files/extras.tzst",
+   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "path": "container_files/extras.tzst"
+  },
+  {
+   "group": "container-files",
+   "name": "proton-9.0-arm64ec_container_pattern.tzst",
+   "from": "https://downloads.gamenative.app/container_files/proton-9.0-arm64ec_container_pattern.tzst",
+   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "path": "container_files/proton-9.0-arm64ec_container_pattern.tzst"
+  },
+  {
+   "group": "container-files",
+   "name": "proton-9.0-x86_64_container_pattern.tzst",
+   "from": "https://downloads.gamenative.app/container_files/proton-9.0-x86_64_container_pattern.tzst",
+   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "path": "container_files/proton-9.0-x86_64_container_pattern.tzst"
+  },
+  {
+   "group": "core-drivers",
+   "name": "Adreno_805_adpkg.zip",
+   "from": "https://downloads.gamenative.app/core_drivers/Adreno_805_adpkg.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "path": "core_drivers/Adreno_805_adpkg.zip"
+  },
+  {
+   "group": "core-drivers",
+   "name": "Adreno_819.2_adpkg.zip",
+   "from": "https://downloads.gamenative.app/core_drivers/Adreno_819.2_adpkg.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "path": "core_drivers/Adreno_819.2_adpkg.zip"
+  },
+  {
+   "group": "core-drivers",
+   "name": "SD8Elite_2-842.6.zip",
+   "from": "https://downloads.gamenative.app/core_drivers/SD8Elite_2-842.6.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "path": "core_drivers/SD8Elite_2-842.6.zip"
+  },
+  {
+   "group": "core-drivers",
+   "name": "SD8Elite_800.35.zip",
+   "from": "https://downloads.gamenative.app/core_drivers/SD8Elite_800.35.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "path": "core_drivers/SD8Elite_800.35.zip"
+  },
+  {
+   "group": "core-drivers",
+   "name": "SD8Elite_800.51.zip",
+   "from": "https://downloads.gamenative.app/core_drivers/SD8Elite_800.51.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "path": "core_drivers/SD8Elite_800.51.zip"
+  },
+  {
+   "group": "drivers",
+   "name": "842.1.zip",
+   "from": "https://downloads.gamenative.app/drivers/842.1.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "842.1",
+     "name": "qcom-842.1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.21.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.21.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.21",
+     "name": "8Elite_800.21",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.22.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.22.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.22",
+     "name": "8Elite_800.22",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.26.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.26.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.26",
+     "name": "8Elite-800.26",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.30.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.30.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.30",
+     "name": "8Elite-800.30",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.33.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.33.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.33",
+     "name": "8Elite-800.33",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.34.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.34.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.34",
+     "name": "8Elite-800.34",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.35.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.35.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.35",
+     "name": "8Elite-800.35",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.36.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.36.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.36",
+     "name": "8Elite-800.36",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.40.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.40.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.40",
+     "name": "8Elite-800.40",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-800.46.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-800.46.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-800.46",
+     "name": "8Elite-800.46",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8E-805.0.zip",
+   "from": "https://downloads.gamenative.app/drivers/8E-805.0.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8E-805.0",
+     "name": "Adreno_805.0",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8eGen5-842.8.zip",
+   "from": "https://downloads.gamenative.app/drivers/8eGen5-842.8.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8eGen5-842.8",
+     "name": "8eGen5-842.8",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8Elite-800.51.zip",
+   "from": "https://downloads.gamenative.app/drivers/8Elite-800.51.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8Elite-800.51",
+     "name": "8Elite-800.51",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "8Elite2-842.6.zip",
+   "from": "https://downloads.gamenative.app/drivers/8Elite2-842.6.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "8Elite2-842.6",
+     "name": "8eGen5-842.6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "a8xx-gen8-V22.zip",
+   "from": "https://downloads.gamenative.app/drivers/a8xx-gen8-V22.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "a8xx-gen8-V22",
+     "name": "turnip_v26.0.0_R8_b5",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "a8xx-gen8-V25.1.zip",
+   "from": "https://downloads.gamenative.app/drivers/a8xx-gen8-V25.1.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "A8XX MR v25.1",
+     "name": "a8xx-gen8-V25.1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "adreno_762.10.zip",
+   "from": "https://downloads.gamenative.app/drivers/adreno_762.10.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "adreno_762.10",
+     "name": "Adreno_762.10",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Adreno_814.zip",
+   "from": "https://downloads.gamenative.app/drivers/Adreno_814.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Adreno_814",
+     "name": "Adreno_814",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Adreno_819.zip",
+   "from": "https://downloads.gamenative.app/drivers/Adreno_819.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Adreno_819",
+     "name": "Adreno_819",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "qcom-800.64.zip",
+   "from": "https://downloads.gamenative.app/drivers/qcom-800.64.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "qcom-800.64",
+     "name": "qcom-800.64",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "qcom-837.zip",
+   "from": "https://downloads.gamenative.app/drivers/qcom-837.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "qcom-837",
+     "name": "qcom-837.6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "qcom-840.zip",
+   "from": "https://downloads.gamenative.app/drivers/qcom-840.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "qcom-840",
+     "name": "qcom-840",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "qcom-842.13.zip",
+   "from": "https://downloads.gamenative.app/drivers/qcom-842.13.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "qcom-842.13",
+     "name": "qcom-842.13",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "qcom-842.16.zip",
+   "from": "https://downloads.gamenative.app/drivers/qcom-842.16.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "qcom-842.16",
+     "name": "qcom-842.16",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "qcom-842.19.zip",
+   "from": "https://downloads.gamenative.app/drivers/qcom-842.19.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "qcom-842.19",
+     "name": "qcom-842.19",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "qcom-849.zip",
+   "from": "https://downloads.gamenative.app/drivers/qcom-849.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "qcom-849",
+     "name": "qcom-849.0",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnio_v26.2.0_R4.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnio_v26.2.0_R4.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip v26.2.0 R4",
+     "name": "Turnip_v26.2.0_R4",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip25.1.0.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip25.1.0.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip25.1.0",
+     "name": "turnip25.1.0",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip25.3.0_R11.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip25.3.0_R11.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip25.3.0_R11",
+     "name": "turnip25.3.0_R11",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip25.3.0_R3_Auto.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip25.3.0_R3_Auto.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip25.3.0_R3_Auto",
+     "name": "turnip25.3.0_R3_Auto",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip25.3.0_R3_Gmem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip25.3.0_R3_Gmem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip25.3.0_R3_Gmem",
+     "name": "turnip25.3.0_R3_Gmem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip25.3.0_R6_Gmem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip25.3.0_R6_Gmem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip25.3.0_R6_Gmem",
+     "name": "turnip25.3.0_R6_Gmem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip26.0.0_R4.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip26.0.0_R4.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip26.0.0_R4",
+     "name": "turnip26.0.0_R4",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip26.0.0_R8.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip26.0.0_R8.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip26.0.0_R8",
+     "name": "turnip26.0.0_R8",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_24.2.0_a32.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_24.2.0_a32.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_24.2.0_a32",
+     "name": "turnip_v24.2.0_a32",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_24.2.0_R19.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_24.2.0_R19.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_24.2.0_R19",
+     "name": "turnip_v24.2.0_R19",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_Gen8_V23.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V23.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_Gen8_V23",
+     "name": "Turnip_Gen8_V23",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_Gen8_V25.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V25.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_Gen8_V25",
+     "name": "Turnip_Gen8_V25",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_Gen8_V28.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V28.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip Gen8 V28",
+     "name": "Turnip_Gen8_V28",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_Gen8_V30.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V30.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip Gen8 V30",
+     "name": "Turnip_Gen8_V30",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_Gen8_V34.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V34.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip Gen8 V34",
+     "name": "Turnip_Gen8_V34",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_mrpurple_T26-toasted.adpkg.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_mrpurple_T26-toasted.adpkg.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip Adreno Driver T26 (@Mr_Purple_666)",
+     "name": "Turnip Adreno Driver T26 (@Mr_Purple_666)",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_mrpurple_T30-toasted.adpkg.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_mrpurple_T30-toasted.adpkg.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip Adreno Driver T30 (@Mr_Purple_666)",
+     "name": "Turnip Adreno Driver T30 (@Mr_Purple_666)",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v24.2.0_R22.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v24.2.0_R22.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v24.2.0_R22",
+     "name": "turnip_v24.2.0_R22",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v24.3.0-R12.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0-R12.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v24.3.0-R12",
+     "name": "turnip_v24.3.0-R12",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v24.3.0_R2.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R2.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v24.3.0_R2",
+     "name": "turnip_v24.3.0_R2",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v24.3.0_R5.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R5.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v24.3.0_R5",
+     "name": "turnip_v24.3.0_R5",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v24.3.0_R6.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R6.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v24.3.0_R6",
+     "name": "turnip_v24.3.0_R6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v24.3.0_R7.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R7.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v24.3.0_R7",
+     "name": "turnip_v24.3.0_R7",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v24.3.0_R8.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R8.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v24.3.0_R8",
+     "name": "turnip_v24.3.0_R8",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.0.0_R1.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.0.0_R1.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.0.0_R1",
+     "name": "turnip_v25.0.0_R1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.0.0_R5.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.0.0_R5.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.0.0_R5",
+     "name": "turnip_v25.0.0_R5",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.0.0_R6.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.0.0_R6.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.0.0_R6",
+     "name": "turnip_v25.0.0_R6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.0.0_R8.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.0.0_R8.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.0.0_R8",
+     "name": "turnip_v25.0.0_R8",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.1.0_R1.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.1.0_R1.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.1.0_R1",
+     "name": "turnip_v25.1.0_R1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.1.0_R5.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.1.0_R5.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.1.0_R5",
+     "name": "turnip_v25.1.0_R5",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.1.0_R6.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.1.0_R6.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.1.0_R6",
+     "name": "turnip_v25.1.0_R6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R1.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R1.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R1",
+     "name": "turnip_v25.2.0_R1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R10.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R10.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R10",
+     "name": "turnip_v25.2.0_R10",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R11.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R11.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R11",
+     "name": "turnip_v25.2.0_R11",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R11_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R11_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R11_mem",
+     "name": "turnip_v25.2.0_R11_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R12.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R12.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R12",
+     "name": "turnip_v25.2.0_R12",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R12_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R12_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R12_mem",
+     "name": "turnip_v25.2.0_R12_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R13.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R13.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R13",
+     "name": "turnip_v25.2.0_R13",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R13_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R13_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R13_mem",
+     "name": "turnip_v25.2.0_R13_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R3_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R3_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R3_mem",
+     "name": "turnip_v25.2.0_R3_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R4.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R4.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R4",
+     "name": "turnip_v25.2.0_R4",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R4_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R4_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R4_mem",
+     "name": "turnip_v25.2.0_R4_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R5.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R5.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R5",
+     "name": "turnip_v25.2.0_R5",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.2.0_R5_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R5_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.2.0_R5_mem",
+     "name": "turnip_v25.2.0_R5_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.2.0_R6.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R6.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.2.0_R6",
+     "name": "turnip_v25.2.0_R6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.2.0_R6_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R6_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.2.0_R6_mem",
+     "name": "turnip_v25.2.0_R6_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.2.0_R7.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R7.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.2.0_R7",
+     "name": "turnip_v25.2.0_R7",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.2.0_R7_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R7_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.2.0_R7_mem",
+     "name": "turnip_v25.2.0_R7_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.2.0_R8.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R8.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.2.0_R8",
+     "name": "turnip_v25.2.0_R8",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R10.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R10.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R10",
+     "name": "turnip_v25.3.0_R10",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R11.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R11.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R11",
+     "name": "turnip_v25.3.0_R11",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R3.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R3.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R3",
+     "name": "turnip_v25.3.0_R3",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R3_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R3_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R3_mem",
+     "name": "turnip_v25.3.0_R3_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R4.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R4.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R4",
+     "name": "turnip_v25.3.0_R4",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R4_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R4_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R4_mem",
+     "name": "turnip_v25.3.0_R4_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R5.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R5.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R5",
+     "name": "turnip_v25.3.0_R5",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R5_one_ui7_fix.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R5_one_ui7_fix.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R5_one_ui7_fix",
+     "name": "turnip_v25.3.0_R5_one_ui7",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R6.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R6.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R6",
+     "name": "turnip_v25.3.0_R6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.3.0_R6_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.3.0_R6_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.3.0_R6_mem",
+     "name": "turnip_v25.3.0_R6_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v25.3.0_R7.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v25.3.0_R7.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip_v25.3.0_R7",
+     "name": "turnip_v25.3.0_R7",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R8.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R8.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R8",
+     "name": "turnip_v25.3.0_R8",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v25.3.0_R9.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R9.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v25.3.0_R9",
+     "name": "turnip_v25.3.0_R9",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R1.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R1.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R1",
+     "name": "turnip_v26.0.0_R1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R1_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R1_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R1_mem",
+     "name": "turnip_v26.0.0_R1_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R2.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R2.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R2",
+     "name": "turnip_v26.0.0_R2",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R2_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R2_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R2_mem",
+     "name": "turnip_v26.0.0_R2_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R3.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R3.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R3",
+     "name": "turnip_v26.0.0_R3",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R3_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R3_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R3_mem",
+     "name": "turnip_v26.0.0_R3_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R4.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R4.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R4",
+     "name": "turnip_v26.0.0_R4",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R4_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R4_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R4_mem",
+     "name": "turnip_v26.0.0_R4_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R5.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R5.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R5",
+     "name": "turnip_v26.0.0_R5",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R5_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R5_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R5_mem",
+     "name": "turnip_v26.0.0_R5_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R6.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R6.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R6",
+     "name": "turnip_v26.0.0_R6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R6_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R6_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R6_mem",
+     "name": "turnip_v26.0.0_R6_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R7.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R7.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R7",
+     "name": "turnip_v26.0.0_R7",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R7_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R7_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R7_mem",
+     "name": "turnip_v26.0.0_R7_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R8.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R8",
+     "name": "turnip_v26.0.0_R8",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R8_b1.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_b1.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R8_b1",
+     "name": "turnip_v26.0.0_R8_b1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R8_b12.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_b12.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R8_b12",
+     "name": "turnip_v26.0.0_R8_b4",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R8_b3.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_b3.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R8_b3",
+     "name": "turnip_v26.0.0_R8_b2",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R8_b8.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_b8.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R8_b8",
+     "name": "turnip_v26.0.0_R8_b3",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "turnip_v26.0.0_R8_mem.zip",
+   "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_mem.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "turnip_v26.0.0_R8_mem",
+     "name": "turnip_v26.0.0_R8_mem",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v26.1.0_A12Fix.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v26.1.0_A12Fix.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip v26.1.0 A12 Fix",
+     "name": "Turnip_v26.1.0_A12Fix",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v26.2.0_R1.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v26.2.0_R1.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip v26.2.0 R1",
+     "name": "Turnip_v26.2.0_R1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v26.2.0_R4_OneUI.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v26.2.0_R4_OneUI.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip v26.2.0_R4_OneUI",
+     "name": "Turnip_v26.2.0_R4_OneUI",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "Turnip_v26.3.0-R3.zip",
+   "from": "https://downloads.gamenative.app/drivers/Turnip_v26.3.0-R3.zip",
+   "licence": "MIT (Mesa Turnip)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "Turnip v26.3.0-R3",
+     "name": "Turnip_v26.3.0-R3",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "v762.zip",
+   "from": "https://downloads.gamenative.app/drivers/v762.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "v762",
+     "name": "v762",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "drivers",
+   "name": "v805.zip",
+   "from": "https://downloads.gamenative.app/drivers/v805.zip",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "items": [
+    {
+     "type": "driver",
+     "id": "v805",
+     "name": "v805",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-1.10.3.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-1.10.3.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "1.10.3-0",
+     "name": "DXVK 1.10.3",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-2.3.1.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.3.1.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.3.1-0",
+     "name": "DXVK 2.3.1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-2.4.1-pre-reg.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.4.1-pre-reg.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.4.1-pre-reg-0",
+     "name": "DXVK 2.4.1 pre-reg",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-2.4.1.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.4.1.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.4.1-0",
+     "name": "DXVK 2.4.1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-2.5.3.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.5.3.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.5.3-0",
+     "name": "DXVK 2.5.3",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-2.6.2.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.6.2.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.6.2-0",
+     "name": "DXVK 2.6.2",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-2.7.1.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.7.1.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.7.1-0",
+     "name": "DXVK 2.7.1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-gplasync-2.3.1-1.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.3.1-1.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.3.1-1-gplasync-0",
+     "name": "DXVK-GPLASYNC 2.3.1-1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-gplasync-2.4.1-1-pre-reg.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.4.1-1-pre-reg.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.4.1-1-gplasync-pre-reg-0",
+     "name": "DXVK-GPLASYNC 2.4.1-1 pre-reg",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-gplasync-2.4.1-1.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.4.1-1.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.4.1-1-gplasync-0",
+     "name": "DXVK-GPLASYNC 2.4.1-1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-gplasync-2.5.3-1.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.5.3-1.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.5.3-1-gplasync-0",
+     "name": "DXVK-GPLASYNC 2.5.3-1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-gplasync-2.6.2-1.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.6.2-1.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.6.2-1-gplasync-0",
+     "name": "DXVK-GPLASYNC 2.6.2-1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxvk",
+   "name": "dxvk-gplasync-2.7.1-1.wcp",
+   "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.7.1-1.wcp",
+   "licence": "Zlib (DXVK)",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.7.1-1-gplasync-0",
+     "name": "DXVK-GPLASYNC 2.7.1-1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "d8vk-1.0.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/d8vk-1.0.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/d8vk-1.0.tzst"
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-1.10.1.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.10.1.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-1.10.1.tzst",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "1.10.1",
+     "name": "DXVK 1.10.1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-1.10.3.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.10.3.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-1.10.3.tzst",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "1.10.3",
+     "name": "DXVK 1.10.3",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-1.10.9-sarek.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.10.9-sarek.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-1.10.9-sarek.tzst",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "1.10.9-sarek",
+     "name": "DXVK 1.10.9-sarek",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-1.11.1-sarek.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.11.1-sarek.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-1.11.1-sarek.tzst"
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-1.12.0-sarek.wcp",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.12.0-sarek.wcp",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-1.12.0-sarek.wcp",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "1.12.0-sarek-0",
+     "name": "DXVK 1.12.0-sarek",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-1.9.2.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.9.2.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-1.9.2.tzst",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "1.9.2",
+     "name": "DXVK 1.9.2",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-2.4.1-gplasync.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-2.4.1-gplasync.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-2.4.1-gplasync.tzst"
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-2.4.1.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-2.4.1.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-2.4.1.tzst",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.4.1",
+     "name": "DXVK 2.4.1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-2.6.1-gplasync.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-2.6.1-gplasync.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-2.6.1-gplasync.tzst"
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-2.7.1.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-2.7.1.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-2.7.1.tzst",
+   "items": [
+    {
+     "type": "dxvk",
+     "id": "2.7.1",
+     "name": "DXVK 2.7.1",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "dxvk-async-1.10.3.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/dxvk-async-1.10.3.tzst",
+   "licence": "Zlib (DXVK)",
+   "path": "dxwrapper/dxvk-async-1.10.3.tzst"
+  },
+  {
+   "group": "dxwrapper",
+   "name": "vkd3d-2.12.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-2.12.tzst",
+   "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "path": "dxwrapper/vkd3d-2.12.tzst",
+   "items": [
+    {
+     "type": "vkd3d",
+     "id": "2.12",
+     "name": "VKD3D 2.12",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "vkd3d-2.13.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-2.13.tzst",
+   "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "path": "dxwrapper/vkd3d-2.13.tzst",
+   "items": [
+    {
+     "type": "vkd3d",
+     "id": "2.13",
+     "name": "VKD3D 2.13",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "vkd3d-2.14.1.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-2.14.1.tzst",
+   "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "path": "dxwrapper/vkd3d-2.14.1.tzst"
+  },
+  {
+   "group": "dxwrapper",
+   "name": "vkd3d-2.6.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-2.6.tzst",
+   "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "path": "dxwrapper/vkd3d-2.6.tzst",
+   "items": [
+    {
+     "type": "vkd3d",
+     "id": "2.6",
+     "name": "VKD3D 2.6",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "vkd3d-3.0.1-4559a01d.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-3.0.1-4559a01d.tzst",
+   "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "path": "dxwrapper/vkd3d-3.0.1-4559a01d.tzst",
+   "items": [
+    {
+     "type": "vkd3d",
+     "id": "3.0.1-4559a01d",
+     "name": "VKD3D 3.0.1-4559a01d (nightly)",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "dxwrapper",
+   "name": "vkd3d-3.0b.tzst",
+   "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-3.0b.tzst",
+   "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "path": "dxwrapper/vkd3d-3.0b.tzst",
+   "items": [
+    {
+     "type": "vkd3d",
+     "id": "3.0b",
+     "name": "VKD3D 3.0b",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "fexcore",
+   "name": "FEXCore-2601-217d039.wcp",
+   "from": "https://downloads.gamenative.app/FEXCore-2601-217d039.wcp",
+   "licence": "MIT (FEX)",
+   "items": [
+    {
+     "type": "fexcore",
+     "id": "2601-217d039-0",
+     "name": "FEX 2601-217d039",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "fexcore",
+   "name": "FEXCore-2607.wcp",
+   "from": "https://downloads.gamenative.app/FEXCore-2607.wcp",
+   "licence": "MIT (FEX)",
+   "items": [
+    {
+     "type": "fexcore",
+     "id": "2607-0",
+     "name": "FEX 2607",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "fexcore",
+   "name": "FEXCore-2608.wcp",
+   "from": "https://downloads.gamenative.app/FEXCore-2608.wcp",
+   "licence": "MIT (FEX)",
+   "items": [
+    {
+     "type": "fexcore",
+     "id": "2608-0",
+     "name": "FEX 2608",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "fexcore",
+   "name": "FEXCore-2609.wcp",
+   "from": "https://downloads.gamenative.app/FEXCore-2609.wcp",
+   "licence": "MIT (FEX)",
+   "items": [
+    {
+     "type": "fexcore",
+     "id": "2609-0",
+     "name": "FEX 2609",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-turnip25.1.0.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.1.0.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/adrenotools-turnip25.1.0.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-turnip25.3.0_R11.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.3.0_R11.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/adrenotools-turnip25.3.0_R11.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-turnip25.3.0_R3_Auto.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.3.0_R3_Auto.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/adrenotools-turnip25.3.0_R3_Auto.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-turnip25.3.0_R3_Gmem.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.3.0_R3_Gmem.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/adrenotools-turnip25.3.0_R3_Gmem.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-turnip25.3.0_R6_Gmem.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.3.0_R6_Gmem.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/adrenotools-turnip25.3.0_R6_Gmem.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-turnip26.0.0_R4.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip26.0.0_R4.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/adrenotools-turnip26.0.0_R4.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-turnip26.0.0_R8.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip26.0.0_R8.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/adrenotools-turnip26.0.0_R8.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-Turnip_Gen8_V25.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-Turnip_Gen8_V25.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/adrenotools-Turnip_Gen8_V25.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-v762.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-v762.tzst",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "path": "graphics_driver/adrenotools-v762.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "adrenotools-v805.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-v805.tzst",
+   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "path": "graphics_driver/adrenotools-v805.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "extra_libs.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/extra_libs.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/extra_libs.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "libvulkan_wrapper.tar.xz",
+   "from": "https://downloads.gamenative.app/graphics_driver/libvulkan_wrapper.tar.xz",
+   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "path": "graphics_driver/libvulkan_wrapper.tar.xz"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "turnip-24.1.0.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/turnip-24.1.0.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/turnip-24.1.0.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "turnip-25.0.0.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/turnip-25.0.0.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/turnip-25.0.0.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "turnip-25.1.0.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/turnip-25.1.0.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/turnip-25.1.0.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "turnip-25.2.0.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/turnip-25.2.0.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/turnip-25.2.0.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "turnip-25.3.0.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/turnip-25.3.0.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/turnip-25.3.0.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "virgl-23.1.9.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/virgl-23.1.9.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/virgl-23.1.9.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "vortek-2.0.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/vortek-2.0.tzst",
+   "licence": "Unlicensed binary (Winlator Vortek, as redistributed by GameNative)",
+   "path": "graphics_driver/vortek-2.0.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "vortek-2.1.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/vortek-2.1.tzst",
+   "licence": "Unlicensed binary (Winlator Vortek, as redistributed by GameNative)",
+   "path": "graphics_driver/vortek-2.1.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "wrapper-gamenative-20260724.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/wrapper-gamenative-20260724.tzst",
+   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "path": "graphics_driver/wrapper-gamenative-20260724.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "wrapper-leegao.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/wrapper-leegao.tzst",
+   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "path": "graphics_driver/wrapper-leegao.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "wrapper-legacy.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/wrapper-legacy.tzst",
+   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "path": "graphics_driver/wrapper-legacy.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "wrapper-v2.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/wrapper-v2.tzst",
+   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "path": "graphics_driver/wrapper-v2.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "wrapper.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/wrapper.tzst",
+   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "path": "graphics_driver/wrapper.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "zink-22.2.5.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/zink-22.2.5.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/zink-22.2.5.tzst"
+  },
+  {
+   "group": "graphics-driver",
+   "name": "zink_dlls.tzst",
+   "from": "https://downloads.gamenative.app/graphics_driver/zink_dlls.tzst",
+   "licence": "MIT (Mesa)",
+   "path": "graphics_driver/zink_dlls.tzst"
+  },
+  {
+   "group": "vkd3d",
+   "name": "vkd3d-proton-3.0.1.wcp",
+   "from": "https://downloads.gamenative.app/drivers/vkd3d-proton-3.0.1.wcp",
+   "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "items": [
+    {
+     "type": "vkd3d",
+     "id": "3.0.1-0",
+     "name": "VKD3D 3.0.1-0",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "wincomponents",
+   "name": "ddraw.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/ddraw.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/ddraw.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "direct3d.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/direct3d.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/direct3d.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "directmusic.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/directmusic.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/directmusic.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "directplay.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/directplay.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/directplay.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "directshow.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/directshow.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/directshow.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "directsound.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/directsound.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/directsound.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "openal.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/openal.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/openal.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "opengl.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/opengl.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/opengl.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "vcrun2010.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/vcrun2010.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/vcrun2010.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "wmdecoder.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/wmdecoder.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/wmdecoder.tzst"
+  },
+  {
+   "group": "wincomponents",
+   "name": "xaudio.tzst",
+   "from": "https://downloads.gamenative.app/wincomponents/xaudio.tzst",
+   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "path": "wincomponents/xaudio.tzst"
+  },
+  {
+   "group": "wine",
+   "name": "proton-10.0-4-arm64ec.wcp",
+   "from": "https://downloads.gamenative.app/proton-10.0-4-arm64ec.wcp",
+   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "items": [
+    {
+     "type": "proton",
+     "id": "proton-10.0-4-arm64ec-1",
+     "name": "Proton 10.0-4 ARM64ec",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "wine",
+   "name": "proton-10.0-4-x86_64.wcp",
+   "from": "https://downloads.gamenative.app/proton-10.0-4-x86_64.wcp",
+   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "items": [
+    {
+     "type": "proton",
+     "id": "proton-10.0-4-x86_64-1",
+     "name": "Proton 10.0-4 x86-64",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "wine",
+   "name": "proton-10.0-arm64ec.wcp",
+   "from": "https://downloads.gamenative.app/proton-10.0-arm64ec.wcp",
+   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "items": [
+    {
+     "type": "proton",
+     "id": "proton-10.0-arm64ec-2",
+     "name": "Proton 10.0 ARM64ec",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "wine",
+   "name": "proton-11.0-1-arm64ec.wcp",
+   "from": "https://downloads.gamenative.app/proton-11.0-1-arm64ec.wcp",
+   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "items": [
+    {
+     "type": "proton",
+     "id": "proton-11.0-1-arm64ec-1",
+     "name": "Proton 11.0-1 ARM64ec",
+     "variant": "bionic"
+    }
+   ]
+  },
+  {
+   "group": "wine",
+   "name": "proton-11.0-1-x86_64.wcp",
+   "from": "https://downloads.gamenative.app/proton-11.0-1-x86_64.wcp",
+   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "items": [
+    {
+     "type": "proton",
+     "id": "proton-11.0-1-x86_64-1",
+     "name": "Proton 11.0-1 x86-64",
+     "variant": "bionic"
+    }
+   ]
+  }
+ ]
+}

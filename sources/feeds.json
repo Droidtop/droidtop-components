@@ -1,0 +1,143 @@
+{
+ "about": "Where droidtop's components come from. kind: mirror (re-hosted here, sources/mirror.json), releases (a GitHub release feed, linked where its maker publishes it, never re-hosted), steam (through droidtop's own Steam sign-in; nothing is published here). engine: bionic runs on droidtop's Windows runtime; linux-glibc needs a glibc userland (droidtop's Linux engine), so droidtop lists it but cannot run it there yet. defaultEnabled: offered without the person turning the source on.",
+ "sources": [
+  {
+   "id": "mirror",
+   "label": "droidtop's mirror",
+   "kind": "mirror",
+   "engine": "bionic",
+   "defaultEnabled": true,
+   "homepage": "https://github.com/Droidtop/droidtop-components",
+   "about": "Every build droidtop offered through GameNative's component list, re-hosted unmodified"
+  },
+  {
+   "id": "droidtop",
+   "label": "droidtop's Wine builds",
+   "kind": "releases",
+   "engine": "bionic",
+   "defaultEnabled": true,
+   "homepage": "https://github.com/Droidtop",
+   "about": "Wine and Proton built by droidtop's own CI; every release of a Droidtop repository named for Wine or Proton",
+   "discover": {"org": "Droidtop", "name": "wine|proton"},
+   "assets": "\\.wcp$",
+   "format": "wcp",
+   "releases": 6
+  },
+  {
+   "id": "banners-turnip",
+   "label": "Banners-Turnip",
+   "kind": "releases",
+   "engine": "bionic",
+   "defaultEnabled": true,
+   "homepage": "https://github.com/The412Banner/Banners-Turnip",
+   "about": "Turnip (Mesa) builds for Adreno",
+   "repo": "The412Banner/Banners-Turnip",
+   "format": "adrenotools",
+   "classify": "banners-turnip",
+   "releases": 15
+  },
+  {
+   "id": "winnative",
+   "label": "WinNative drivers",
+   "kind": "releases",
+   "engine": "bionic",
+   "defaultEnabled": true,
+   "homepage": "https://github.com/WinNative-Emu/Drivers",
+   "about": "Turnip (Mesa) builds for Adreno",
+   "repo": "WinNative-Emu/Drivers",
+   "format": "adrenotools",
+   "classify": "winnative",
+   "releases": 15
+  },
+  {
+   "id": "k11mch1",
+   "label": "K11MCH1 AdrenoToolsDrivers",
+   "kind": "releases",
+   "engine": "bionic",
+   "defaultEnabled": false,
+   "homepage": "https://github.com/K11MCH1/AdrenoToolsDrivers",
+   "about": "Turnip builds and Qualcomm's own Adreno drivers",
+   "repo": "K11MCH1/AdrenoToolsDrivers",
+   "assets": "\\.zip$",
+   "format": "adrenotools",
+   "releases": 10
+  },
+  {
+   "id": "winlator-contents",
+   "label": "winlator-contents (The412Banner)",
+   "kind": "releases",
+   "engine": "bionic",
+   "defaultEnabled": false,
+   "homepage": "https://github.com/The412Banner/winlator-contents",
+   "about": "Bionic GE-Proton and Proton builds packed for Winlator-family runtimes",
+   "repo": "The412Banner/winlator-contents",
+   "assets": "\\.wcp$",
+   "format": "wcp",
+   "releases": 2
+  },
+  {
+   "id": "wcphub",
+   "label": "WinlatorWCPHub (Arihany)",
+   "kind": "releases",
+   "engine": "bionic",
+   "defaultEnabled": false,
+   "homepage": "https://github.com/Arihany/WinlatorWCPHub",
+   "about": "Proton, DXVK, VKD3D, Box64, WowBox64 and FEXCore packages for Winlator-family runtimes",
+   "repo": "Arihany/WinlatorWCPHub",
+   "assets": "\\.wcp$",
+   "format": "wcp",
+   "releases": 30
+  },
+  {
+   "id": "ge-proton",
+   "label": "GE-Proton",
+   "kind": "releases",
+   "engine": "linux-glibc",
+   "defaultEnabled": false,
+   "homepage": "https://github.com/GloriousEggroll/proton-ge-custom",
+   "about": "GloriousEggroll's Proton for Linux (x86_64 and aarch64)",
+   "repo": "GloriousEggroll/proton-ge-custom",
+   "assets": "\\.tar\\.gz$",
+   "format": "linux-tar",
+   "type": "proton",
+   "releases": 4
+  },
+  {
+   "id": "proton-cachyos",
+   "label": "proton-cachyos",
+   "kind": "releases",
+   "engine": "linux-glibc",
+   "defaultEnabled": false,
+   "homepage": "https://github.com/CachyOS/proton-cachyos",
+   "about": "CachyOS's Proton for Linux (x86_64 and arm64)",
+   "repo": "CachyOS/proton-cachyos",
+   "assets": "-(arm64|x86_64)\\.tar\\.xz$",
+   "format": "linux-tar",
+   "type": "proton",
+   "releases": 3
+  },
+  {
+   "id": "kron4ek",
+   "label": "Kron4ek Wine builds",
+   "kind": "releases",
+   "engine": "linux-glibc",
+   "defaultEnabled": false,
+   "homepage": "https://github.com/Kron4ek/Wine-Builds",
+   "about": "Wine, Wine Staging and TKG builds for Linux",
+   "repo": "Kron4ek/Wine-Builds",
+   "assets": "\\.tar\\.xz$",
+   "format": "linux-tar",
+   "type": "wine",
+   "releases": 3
+  },
+  {
+   "id": "steam",
+   "label": "Steam (Valve's Proton)",
+   "kind": "steam",
+   "engine": "linux-glibc",
+   "defaultEnabled": false,
+   "homepage": "https://store.steampowered.com",
+   "about": "Proton as Steam installs it, through droidtop's own Steam sign-in; Valve's builds are Linux builds"
+  }
+ ]
+}

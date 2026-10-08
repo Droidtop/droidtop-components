@@ -1,0 +1,68 @@
+# Mirror and catalog: re-hosts the files in sources/mirror.json (tools/mirror.py), then writes
+# catalog.json from the mirror and the release feeds in sources/feeds.json
+# (tools/build_catalog.py), attests it (a Sigstore-signed build provenance: no key is kept
+# anywhere) and publishes it on the "catalog" release, where droidtop reads it:
+#   https://github.com/Droidtop/droidtop-components/releases/download/catalog/catalog.json
+# Daily, so a new upstream release shows up in droidtop by itself.
+name: Mirror and catalog
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  mirror:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the id rules
+        run: python3 tools/test_rules.py
+      - name: Mirror new files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/mirror.py
+
+  catalog:
+    needs: mirror
+    # A file that failed to mirror is left out of the catalog until a later run fetches it.
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: sudo apt-get install -y --no-install-recommends zstd xz-utils
+      - name: Build the catalog
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/build_catalog.py out
+      - name: Attest the catalog
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: out/catalog.json
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view catalog -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 ||
+            gh release create catalog -R "$GITHUB_REPOSITORY" --latest=false \
+              --title "Component catalog" \
+              --notes "catalog.json: every component droidtop can offer, with its SHA-256. Rewritten by every run of the Mirror and catalog workflow."
+          gh release upload catalog out/catalog.json out/probe-cache.json -R "$GITHUB_REPOSITORY" --clobber
