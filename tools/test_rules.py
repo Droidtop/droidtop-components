@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""The Wine/Proton id rules, checked against the cases droidtop's WineBuildRulesTest checks."""
+"""The Wine/Proton id rules, checked against the cases droidtop's WineBuildRulesTest checks;
+the order of a file's download URLs; and that sources/mirror.json is complete."""
+import json
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_catalog import add_flavour, asset_flavour, canonical_name, runtime_ver_code, runtime_ver_name  # noqa: E402
+from build_catalog import (add_flavour, asset_flavour, canonical_name, mirror_urls, runtime_ver_code,  # noqa: E402
+                           runtime_ver_name)
 
 CASES = [
     # (profile type, profile versionName, arch from the wine binary, installed name)
@@ -41,9 +44,30 @@ def main():
         if runtime_ver_code(code) != want:
             print(f'version code {code}: got {runtime_ver_code(code)}, want {want}')
             bad += 1
+    ours, maker, other = 'https://ours/x', 'https://maker/x', 'https://other/x'
+    for entry, asset, want in [({'from': maker}, ours, [ours, maker]),
+                               ({'from': maker, 'official': [other, maker]}, ours, [ours, maker, other]),
+                               ({'from': maker, 'hosting': 'link'}, ours, [maker]),
+                               ({'from': maker}, None, [maker])]:
+        if mirror_urls(entry, asset) != want:
+            print(f'mirror_urls {entry} {asset}: got {mirror_urls(entry, asset)}, want {want}')
+            bad += 1
+    # mirror.json: every file has a recorded SHA-256 and a licence; a link-only file cites its clause.
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    for e in json.load(open(os.path.join(root, 'sources', 'mirror.json')))['files']:
+        problems = [k for k in ('sha256', 'licence') if not e.get(k)]
+        if e.get('hosting') not in (None, 'link'):
+            problems.append('hosting')
+        if e.get('hosting') == 'link' and not e.get('prohibitedBy'):
+            problems.append('prohibitedBy')
+        if e.get('source') and not (e['source'].get('repo') and e['source'].get('ref')):
+            problems.append('source')
+        if problems:
+            print(f'mirror.json {e["group"]}/{e["name"]}: missing or bad {", ".join(problems)}')
+            bad += 1
     if bad:
         sys.exit(1)
-    print(f'{len(CASES)} id cases pass')
+    print(f'{len(CASES)} id cases, mirror URL order and mirror.json pass')
 
 
 if __name__ == '__main__':

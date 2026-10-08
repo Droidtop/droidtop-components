@@ -283,25 +283,59 @@ WCP_TYPES = {'wine': 'wine', 'proton': 'proton', 'dxvk': 'dxvk', 'vkd3d': 'vkd3d
 
 # ---- catalog --------------------------------------------------------------------------------
 
+def mirror_urls(entry, asset_url):
+    """Where droidtop may fetch a mirror.json file, in the order it tries them: our copy (unless
+    the file is link-only), then its makers' copies of the same bytes (`from`, then `official`)."""
+    urls = [] if entry.get('hosting') == 'link' or not asset_url else [asset_url]
+    for u in [entry['from']] + entry.get('official', []):
+        if u not in urls:
+            urls.append(u)
+    return urls
+
+
+def source_code(entry):
+    """The corresponding-source pointer of an LGPL/GPL file, as the catalog carries it."""
+    src = entry.get('source')
+    if not src:
+        return None
+    out = {'repo': src['repo'], 'ref': src['ref'], 'exact': bool(src.get('exact')),
+           'url': f'https://github.com/{src["repo"]}/tree/{src["ref"]}'}
+    if src.get('exact'):
+        name = f'source-{src["repo"].split("/")[1]}-{src["ref"]}.tar.gz'
+        out['archive'] = f'https://github.com/{REPO}/releases/download/{entry["group"]}/{name}'
+    return out
+
+
 def mirrored_items(items, files):
     mirror = json.load(open(os.path.join(ROOT, 'sources', 'mirror.json')))['files']
     assets = {}
     for group in sorted({e['group'] for e in mirror}):
         r = release(group)
         assets[group] = {a['name'].lower(): a for a in (r['assets'] if r else [])}
-    missing = 0
+    missing = linked = 0
     for e in mirror:
         a = assets[e['group']].get(e['name'].lower())
-        if a is None or not asset_sha256(a):
+        if e.get('hosting') == 'link':
+            # Not ours to host: offered from its maker with the SHA-256 recorded in mirror.json.
+            a, linked = None, linked + 1
+            sha, size = e['sha256'], e.get('size', 0)
+        elif a is None or not asset_sha256(a):
             missing += 1
             continue
+        else:
+            sha, size = asset_sha256(a), a['size']
+        urls = mirror_urls(e, a['browser_download_url'] if a else None)
+        extra = {'licence': e.get('licence')}
+        if source_code(e):
+            extra['sourceCode'] = source_code(e)
         if e.get('path'):
-            files[e['path']] = {'url': a['browser_download_url'], 'sha256': asset_sha256(a), 'size': a['size']}
+            files[e['path']] = dict({'url': urls[0], 'urls': urls, 'sha256': sha, 'size': size}, **extra)
         for it in e.get('items', []):
             items.setdefault(it['type'], []).append(dict(
-                it, url=a['browser_download_url'], sha256=asset_sha256(a), size=a['size'], source='mirror',
-                engine='bionic', licence=e.get('licence'), upstream=e['from']))
-    print(f'mirror: {sum(len(v) for v in items.values())} items, {len(files)} files, {missing} not mirrored yet')
+                it, url=urls[0], urls=urls, sha256=sha, size=size, source='mirror',
+                engine='bionic', upstream=e['from'], **extra))
+    print(f'mirror: {sum(len(v) for v in items.values())} items, {len(files)} files, '
+          f'{linked} link-only, {missing} not mirrored yet')
 
 
 def feed_repos(feed):
@@ -331,7 +365,8 @@ def feed_items(feed, items, cache, work):
                 if label is None:
                     continue
                 seen.add(name.lower())
-                base = {'url': a['browser_download_url'], 'sha256': sha, 'size': a['size'], 'source': feed['id'],
+                base = {'url': a['browser_download_url'], 'urls': [a['browser_download_url']], 'sha256': sha,
+                        'size': a['size'], 'source': feed['id'],
                         'variant': 'bionic', 'tag': r['tag_name'], 'upstream': r['html_url']}
                 if fmt == 'linux-tar':
                     arch = next((v for k, v in [('aarch64', 'aarch64'), ('arm64', 'aarch64'), ('x86_64', 'x86_64'),
@@ -412,6 +447,11 @@ def main():
         'items': items,
         'files': files,
     }
+    if os.environ.get('CATALOG_SIGNED') == 'true':
+        # Written by tools/sign_catalog.sh beside the catalog on the same release. droidtop does not
+        # rely on this field: once it pins a master key it fetches both files whether named or not.
+        catalog['signature'] = {'file': 'catalog.json.sig', 'certificate': 'catalog.cert',
+                                'algorithm': 'ECDSA-P256-SHA256'}
     with open(os.path.join(out, 'catalog.json'), 'w') as f:
         json.dump(catalog, f, indent=1, sort_keys=False)
         f.write('\n')

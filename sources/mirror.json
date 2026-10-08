@@ -1,39 +1,76 @@
 {
- "about": "Files droidtop-components re-hosts unmodified. Seeded 2026-10-08 with exactly what droidtop users could get through GameNative's component list and download host.",
+ "about": "Files droidtop-components offers. Seeded 2026-10-08 with exactly what droidtop users could get through GameNative's component list and download host. hosting \"link\" (terms that explicitly forbid redistribution, prohibitedBy cites the clause): not re-hosted, offered from its maker's URL with the SHA-256 recorded here. Licences: README.md.",
  "files": [
   {
    "group": "base",
    "name": "imagefs_bionic.txz",
    "from": "https://downloads.gamenative.app/imagefs_bionic.txz",
-   "licence": "Mixed open-source (GameNative/Winlator base system image)",
+   "sha256": "368db62bfc58b72c97e5169bda9aa64d4246f07964c447e27c79a065e7e9c48b",
+   "size": 183506500,
+   "licence": "Mixed (Android userland built from Termux packages: GPL-2.0/GPL-3.0 (coreutils, bash), LGPL (FFmpeg, PulseAudio), MIT/BSD and others; each package's own licence)",
+   "source": {
+    "repo": "termux/termux-packages",
+    "ref": "master",
+    "exact": false,
+    "note": "build recipes of the packages; GameNative has not published its imagefs build"
+   },
    "path": "imagefs_bionic.txz"
   },
   {
    "group": "base",
    "name": "imagefs_gamenative.txz",
    "from": "https://downloads.gamenative.app/imagefs_gamenative.txz",
-   "licence": "Mixed open-source (GameNative/Winlator base system image)",
+   "sha256": "3c16c82a1948d3804de45e75c41ff455f1a393a36349af90eae06fd5b93d248b",
+   "size": 166439388,
+   "licence": "Mixed (Android userland built from Termux packages: GPL-2.0/GPL-3.0 (coreutils, bash), LGPL (FFmpeg, PulseAudio), MIT/BSD and others; each package's own licence)",
+   "source": {
+    "repo": "termux/termux-packages",
+    "ref": "master",
+    "exact": false,
+    "note": "build recipes of the packages; GameNative has not published its imagefs build"
+   },
    "path": "imagefs_gamenative.txz"
   },
   {
    "group": "base",
    "name": "proton-9.0-arm64ec.txz",
    "from": "https://downloads.gamenative.app/proton-9.0-arm64ec.txz",
-   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "sha256": "dbdc09e09fb92420b60a3ce5c87ca23fee6021691b92281019fe55c25f49bc57",
+   "size": 76299500,
+   "licence": "LGPL-2.1-or-later (Wine/Proton, GameNative proton-wine builds)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_9.0",
+    "exact": false,
+    "note": "GameNative names no commit for this build (its binaries say only \"wine-9.0\")"
+   },
    "path": "proton-9.0-arm64ec.txz"
   },
   {
    "group": "base",
    "name": "proton-9.0-x86_64.txz",
    "from": "https://downloads.gamenative.app/proton-9.0-x86_64.txz",
-   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "sha256": "922155d4a096730390029f72f074d7074f0a5edc7abb13b55a7b10092b0f3a2a",
+   "size": 56196308,
+   "licence": "LGPL-2.1-or-later (Wine/Proton, GameNative proton-wine builds)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_9.0",
+    "exact": false,
+    "note": "GameNative names no commit for this build (its binaries say only \"wine-9.0\")"
+   },
    "path": "proton-9.0-x86_64.txz"
   },
   {
    "group": "box64",
    "name": "box64-0.4.4.wcp",
    "from": "https://downloads.gamenative.app/box64-0.4.4.wcp",
+   "sha256": "2114616740833aebe8cf36a8406a3086db973b2fd389a25102f6ff5c4281d653",
+   "size": 3653712,
    "licence": "MIT (Box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
    "items": [
     {
      "type": "box64",
@@ -47,7 +84,10 @@
    "group": "box64",
    "name": "wowbox64-0.3.6.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/WOWBOX64/wowbox64-0.3.6.wcp",
+   "sha256": "4c69a542aea2e144ad6b11c74454be140a6a9f50c2a7db88c7af4d67caa00f27",
+   "size": 1293484,
    "licence": "MIT (Box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
    "items": [
     {
      "type": "wowbox64",
@@ -61,7 +101,10 @@
    "group": "box64",
    "name": "Wowbox64-0.4.4.wcp",
    "from": "https://downloads.gamenative.app/Wowbox64-0.4.4.wcp",
+   "sha256": "78838f03cff31e29811c477f27a28f334ea6db9e8e500505cd19325f884b8b21",
+   "size": 970828,
    "licence": "MIT (Box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
    "items": [
     {
      "type": "wowbox64",
@@ -75,77 +118,128 @@
    "group": "container-files",
    "name": "container_pattern_common_20260821.tzst",
    "from": "https://downloads.gamenative.app/container_files/container_pattern_common_20260821.tzst",
-   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "sha256": "c62311ac7a10a149f33cd1b2fcdf9f79c8a6b35d8b46066b33108c003b7e85c6",
+   "size": 41592095,
+   "hosting": "link",
+   "prohibitedBy": "Fonts inside: arial/times/verdana etc. carry Monotype's notice \"You may not copy or distribute this software.\"; msyh.ttc and SimHei.ttf carry \"Microsoft supplied font ... Any other use is prohibited.\" (each font's own name table)",
+   "licence": "Mixed: Wine prefix files (LGPL-2.1-or-later) plus Microsoft/Monotype and other commercial fonts",
    "path": "container_files/container_pattern_common_20260821.tzst"
   },
   {
    "group": "container-files",
    "name": "container_pattern_gamenative.tzst",
    "from": "https://downloads.gamenative.app/container_files/container_pattern_gamenative.tzst",
-   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "sha256": "f19a9e7280df753c0ea197ca8aaee46aa31de9ee2d7e59de3a5870132d0001fd",
+   "size": 9932192,
+   "licence": "LGPL-2.1-or-later (Wine prefix: Wine builtin DLLs)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_10.0",
+    "exact": false,
+    "note": "the prefix holds Wine builtin DLLs of the Proton build it pairs with"
+   },
    "path": "container_files/container_pattern_gamenative.tzst"
   },
   {
    "group": "container-files",
    "name": "extras.tzst",
    "from": "https://downloads.gamenative.app/container_files/extras.tzst",
-   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "sha256": "d47d2c0e12f4f59beb3e4a80ed9e7373a15fc7cc796d406fd6f18d0f58249184",
+   "size": 85987690,
+   "licence": "Mixed: 7-Zip (LGPL-2.1 with the unRAR restriction, https://www.7-zip.org/license.txt), Steamless (CC BY-NC-ND 4.0, https://github.com/atom0s/Steamless/blob/master/LICENSE), wine-mono (https://github.com/wine-mono/wine-mono/blob/main/COPYING), and small test tools with no stated licence",
+   "source": {
+    "repo": "ip7z/7zip",
+    "ref": "main",
+    "exact": false,
+    "note": "7-Zip sources; wine-mono: wine-mono/wine-mono"
+   },
    "path": "container_files/extras.tzst"
   },
   {
    "group": "container-files",
    "name": "proton-9.0-arm64ec_container_pattern.tzst",
    "from": "https://downloads.gamenative.app/container_files/proton-9.0-arm64ec_container_pattern.tzst",
-   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "sha256": "9826ac61405f641ca8326335208c3e1ed5cec107f4b0354f813825ec398b841b",
+   "size": 10309411,
+   "licence": "LGPL-2.1-or-later (Wine prefix: Wine builtin DLLs)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_9.0",
+    "exact": false,
+    "note": "GameNative names no commit for this build (its binaries say only \"wine-9.0\")"
+   },
    "path": "container_files/proton-9.0-arm64ec_container_pattern.tzst"
   },
   {
    "group": "container-files",
    "name": "proton-9.0-x86_64_container_pattern.tzst",
    "from": "https://downloads.gamenative.app/container_files/proton-9.0-x86_64_container_pattern.tzst",
-   "licence": "Mixed (Wine prefix templates from GameNative/Winlator)",
+   "sha256": "fa25987a3ba4f1b951bd1161f9a65a9450f0b72b87583fd3d9971d92c63a9608",
+   "size": 8698674,
+   "licence": "LGPL-2.1-or-later (Wine prefix: Wine builtin DLLs)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_9.0",
+    "exact": false,
+    "note": "GameNative names no commit for this build (its binaries say only \"wine-9.0\")"
+   },
    "path": "container_files/proton-9.0-x86_64_container_pattern.tzst"
   },
   {
    "group": "core-drivers",
    "name": "Adreno_805_adpkg.zip",
    "from": "https://downloads.gamenative.app/core_drivers/Adreno_805_adpkg.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "7eebc20b44f10d84f68d2ebd0eaa27e29750640308a51472ea9c7797edf0d823",
+   "size": 12757906,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "path": "core_drivers/Adreno_805_adpkg.zip"
   },
   {
    "group": "core-drivers",
    "name": "Adreno_819.2_adpkg.zip",
    "from": "https://downloads.gamenative.app/core_drivers/Adreno_819.2_adpkg.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "d0c3ea86f4b681bd53a940a0fd8c2220345c5140c525d1e1af6cdcfe25f4d3e1",
+   "size": 13082749,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "path": "core_drivers/Adreno_819.2_adpkg.zip"
   },
   {
    "group": "core-drivers",
    "name": "SD8Elite_2-842.6.zip",
    "from": "https://downloads.gamenative.app/core_drivers/SD8Elite_2-842.6.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "4b6ee8eeac109800cea5cc05ae73e9f6a03acbd99c029c328c34faa9b44ae430",
+   "size": 13253104,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "path": "core_drivers/SD8Elite_2-842.6.zip"
   },
   {
    "group": "core-drivers",
    "name": "SD8Elite_800.35.zip",
    "from": "https://downloads.gamenative.app/core_drivers/SD8Elite_800.35.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "1852a2655da8dce7018fa4a208decd565a130b392ddabdee62f9b75229e1f64f",
+   "size": 16559176,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "path": "core_drivers/SD8Elite_800.35.zip"
   },
   {
    "group": "core-drivers",
    "name": "SD8Elite_800.51.zip",
    "from": "https://downloads.gamenative.app/core_drivers/SD8Elite_800.51.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "774af41a2d993f5e6f8095952a94ddb13f66eee3be6e801e3c707b8146297fd0",
+   "size": 15935994,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "path": "core_drivers/SD8Elite_800.51.zip"
   },
   {
    "group": "drivers",
    "name": "842.1.zip",
    "from": "https://downloads.gamenative.app/drivers/842.1.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "1dc190e85443787f15136f435e7438cd83e8719f3fa424ea18eb636ba4849c2c",
+   "size": 13192195,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -159,7 +253,9 @@
    "group": "drivers",
    "name": "8E-800.21.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.21.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "70b5d1eedfb72294d9a5a950b8ec6ab26637c5021a06d1d5718481c098a8c983",
+   "size": 15920765,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -173,7 +269,9 @@
    "group": "drivers",
    "name": "8E-800.22.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.22.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "6a0c42ec3036d76efe3e49ec240d12a9e563cb3742c4504c01ecad3c2cb587b8",
+   "size": 15904923,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -187,7 +285,9 @@
    "group": "drivers",
    "name": "8E-800.26.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.26.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "fa5788e8331cc54ad662e44e49ebab952f20ab64f3ec6e251f347627c96975d6",
+   "size": 15905135,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -201,7 +301,9 @@
    "group": "drivers",
    "name": "8E-800.30.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.30.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "13b974c8b22623b76ad426272df52132a55d3026c288d051be46e091885e89f6",
+   "size": 15904898,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -215,7 +317,9 @@
    "group": "drivers",
    "name": "8E-800.33.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.33.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "b6c4765d280dce7dea8b9f0bc6d8b032e96c41da8880ee9a6f6f48dc3a5c9cbc",
+   "size": 15904529,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -229,7 +333,9 @@
    "group": "drivers",
    "name": "8E-800.34.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.34.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "a453bb748ad3b125eea04a24babb14fa4b6c19533b85c8804777e07e36a52942",
+   "size": 15905343,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -243,7 +349,9 @@
    "group": "drivers",
    "name": "8E-800.35.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.35.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "8d41860de1b911120305923c6945284533b371732daaedfa68431e203e6ee4f9",
+   "size": 15904477,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -257,7 +365,9 @@
    "group": "drivers",
    "name": "8E-800.36.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.36.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "9748f0d3ec4e7ed88118cf57fafbd09c005e0cd2c602448f644227cdba0a5f1b",
+   "size": 15905286,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -271,7 +381,9 @@
    "group": "drivers",
    "name": "8E-800.40.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.40.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "9113f63ec3ca4f9870069970296eaf66a84755dd658da42791320b5aa693f9ff",
+   "size": 15905851,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -285,7 +397,9 @@
    "group": "drivers",
    "name": "8E-800.46.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-800.46.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "19356b7cadcbeb28989627ad00d1be90a33990de4de8e807cd6336dcbf828d54",
+   "size": 15904987,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -299,7 +413,9 @@
    "group": "drivers",
    "name": "8E-805.0.zip",
    "from": "https://downloads.gamenative.app/drivers/8E-805.0.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "063226cea7473394572368d8a3a1f512251f16004284828cd588a6441653d8d6",
+   "size": 12751810,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -313,7 +429,9 @@
    "group": "drivers",
    "name": "8eGen5-842.8.zip",
    "from": "https://downloads.gamenative.app/drivers/8eGen5-842.8.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "74a45c48b7458adfef03e27131c43ff8769269f7868f820d52a63bcc33498519",
+   "size": 13253379,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -327,7 +445,9 @@
    "group": "drivers",
    "name": "8Elite-800.51.zip",
    "from": "https://downloads.gamenative.app/drivers/8Elite-800.51.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "d449475328541c2c5c8233f653ead4e0bfe804bc4a7d1d06aa6b6b72cbc1ebe6",
+   "size": 15935994,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -341,7 +461,9 @@
    "group": "drivers",
    "name": "8Elite2-842.6.zip",
    "from": "https://downloads.gamenative.app/drivers/8Elite2-842.6.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "deb6c428dba9d03c4426e9e3a5c99b1f80fabecefe222e0c50856ebd338b8d64",
+   "size": 13253104,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -355,7 +477,10 @@
    "group": "drivers",
    "name": "a8xx-gen8-V22.zip",
    "from": "https://downloads.gamenative.app/drivers/a8xx-gen8-V22.zip",
+   "sha256": "fc0cf616904a94f122c568bca1b47a9782f0af1700f23aeab88e84e4e403a28e",
+   "size": 2826274,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -369,7 +494,10 @@
    "group": "drivers",
    "name": "a8xx-gen8-V25.1.zip",
    "from": "https://downloads.gamenative.app/drivers/a8xx-gen8-V25.1.zip",
+   "sha256": "cfe97afbc94863aa42ea2319d1f39a1e6bee2d5ac30d72897bb91a0030b045c6",
+   "size": 2558933,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -383,7 +511,9 @@
    "group": "drivers",
    "name": "adreno_762.10.zip",
    "from": "https://downloads.gamenative.app/drivers/adreno_762.10.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "5b4cc5834ee77f71112553e28013736979762742bf80f8e7541560da570590e6",
+   "size": 15014924,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -397,7 +527,9 @@
    "group": "drivers",
    "name": "Adreno_814.zip",
    "from": "https://downloads.gamenative.app/drivers/Adreno_814.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "0149d34e980762754560ceb8cb3866f3fe9a75b8f85b97971577fa037bf78f11",
+   "size": 16824685,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -411,7 +543,9 @@
    "group": "drivers",
    "name": "Adreno_819.zip",
    "from": "https://downloads.gamenative.app/drivers/Adreno_819.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "f48877df9f4119d6157a4b9cf277c6aff6bae54bf3fbf9b31d844596dedc63ac",
+   "size": 13078591,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -425,7 +559,9 @@
    "group": "drivers",
    "name": "qcom-800.64.zip",
    "from": "https://downloads.gamenative.app/drivers/qcom-800.64.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "b56f2e8de2f2a355aa6eb3dd6eb84f0f7751f1083031e8c6c74536813f0560f8",
+   "size": 15934642,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -439,7 +575,9 @@
    "group": "drivers",
    "name": "qcom-837.zip",
    "from": "https://downloads.gamenative.app/drivers/qcom-837.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "914f3bab5eff70a9953ba417e89fd16bd3abac3e8b5af2be0f4f7d766954224f",
+   "size": 13089961,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -453,7 +591,9 @@
    "group": "drivers",
    "name": "qcom-840.zip",
    "from": "https://downloads.gamenative.app/drivers/qcom-840.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "62be8037cd747b64e761dff66891f997f137fdb6798e97493291b7dfe09fd2a9",
+   "size": 17912662,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -467,7 +607,9 @@
    "group": "drivers",
    "name": "qcom-842.13.zip",
    "from": "https://downloads.gamenative.app/drivers/qcom-842.13.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "3812cafcf3acccc2cb9c9b4e2f78027310800cab3bbc0f92b177d6656c0f78cd",
+   "size": 13201208,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -481,7 +623,9 @@
    "group": "drivers",
    "name": "qcom-842.16.zip",
    "from": "https://downloads.gamenative.app/drivers/qcom-842.16.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "9459d5965d26399286071c28cffb64f5a1aff59001f57eb79abd3209617dab36",
+   "size": 13207821,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -495,7 +639,9 @@
    "group": "drivers",
    "name": "qcom-842.19.zip",
    "from": "https://downloads.gamenative.app/drivers/qcom-842.19.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "c358ef3ddd9d533271ca6926b74f524e4362f98307bbca60849bebc155af5e95",
+   "size": 13194650,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -509,7 +655,9 @@
    "group": "drivers",
    "name": "qcom-849.zip",
    "from": "https://downloads.gamenative.app/drivers/qcom-849.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "46c99b6ac603223c6d58e25abf4929c3ef0769cf9d16886b97e5267215a16bb6",
+   "size": 13279106,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -523,7 +671,10 @@
    "group": "drivers",
    "name": "Turnio_v26.2.0_R4.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnio_v26.2.0_R4.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "2f61896810e82aa9aa309b852326261e90bd2b9bfbb52f47ab036b65afd7524d",
+   "size": 2700091,
+   "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -537,7 +688,10 @@
    "group": "drivers",
    "name": "turnip25.1.0.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip25.1.0.zip",
+   "sha256": "933003e0a1608d63c5d1be3148c1c09615eb6a0cd4b7c5e2b8273f6811cd14cb",
+   "size": 2528848,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -551,7 +705,10 @@
    "group": "drivers",
    "name": "turnip25.3.0_R11.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip25.3.0_R11.zip",
+   "sha256": "6ebd4cdfb327bb611623e93d75f0f18a336f18a7bad5067b89e7c5b769a8b563",
+   "size": 3370015,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -565,7 +722,10 @@
    "group": "drivers",
    "name": "turnip25.3.0_R3_Auto.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip25.3.0_R3_Auto.zip",
+   "sha256": "883b77a32ef7f3fbb86c91b64d49883cb8ab4df88c2e0bfc6699c753f1b76b3d",
+   "size": 2526556,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -579,7 +739,10 @@
    "group": "drivers",
    "name": "turnip25.3.0_R3_Gmem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip25.3.0_R3_Gmem.zip",
+   "sha256": "017aac85c610838378099c5f3957343522a3732d10efd2226d9e4e681a0d5eae",
+   "size": 2524558,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -593,7 +756,10 @@
    "group": "drivers",
    "name": "turnip25.3.0_R6_Gmem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip25.3.0_R6_Gmem.zip",
+   "sha256": "b0e0dab1a27284502da1b1882febf2bcae0503f2fa28c72b56c7089c4ffdd7b7",
+   "size": 2547949,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -607,7 +773,10 @@
    "group": "drivers",
    "name": "turnip26.0.0_R4.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip26.0.0_R4.zip",
+   "sha256": "be34beaca518114bb53c0395694f4d93eb648e4f842f321728e655aeb4266d6d",
+   "size": 3445873,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -621,7 +790,10 @@
    "group": "drivers",
    "name": "turnip26.0.0_R8.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip26.0.0_R8.zip",
+   "sha256": "29f35867c06036e5b3139cd33dd724d2287a67a81e64d8c0d0072064b2657ec7",
+   "size": 3483049,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -635,7 +807,10 @@
    "group": "drivers",
    "name": "turnip_24.2.0_a32.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_24.2.0_a32.zip",
+   "sha256": "3167f7d86b696f7d7c020334bcb92dee8bd465de33c84dbc08ba72e5f0e5ab3a",
+   "size": 2181546,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -649,7 +824,10 @@
    "group": "drivers",
    "name": "turnip_24.2.0_R19.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_24.2.0_R19.zip",
+   "sha256": "f074efb7152aa2278e9831b106e58c11f01494000c0c0a1af2aea865c5a6d841",
+   "size": 2162103,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -663,7 +841,10 @@
    "group": "drivers",
    "name": "Turnip_Gen8_V23.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V23.zip",
+   "sha256": "0708459f27a3f03deb68ef35457bf8768f31c139c9f02a06a5614ef8313b5366",
+   "size": 3309935,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -677,7 +858,10 @@
    "group": "drivers",
    "name": "Turnip_Gen8_V25.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V25.zip",
+   "sha256": "93adba40f06df1ba0beb2d9e4f78eab2b1808f8c4d88f2b173e59d6fb449328e",
+   "size": 3343770,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -691,7 +875,10 @@
    "group": "drivers",
    "name": "Turnip_Gen8_V28.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V28.zip",
+   "sha256": "d7a05211d2c3d0e6062f0bf3e3b4fe34754fb5d834ecaea29f0fc46620432b6f",
+   "size": 3525761,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -705,7 +892,10 @@
    "group": "drivers",
    "name": "Turnip_Gen8_V30.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V30.zip",
+   "sha256": "0f57b8400bec62fdd9140e2d6fd3caa603ed56b6e532a0708c871647d85320ca",
+   "size": 2674301,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -719,7 +909,10 @@
    "group": "drivers",
    "name": "Turnip_Gen8_V34.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_Gen8_V34.zip",
+   "sha256": "5d409e1bf77279520715f56cdb164933da27be4cbd2e72bd62abee3df127c65f",
+   "size": 2800551,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -733,7 +926,13 @@
    "group": "drivers",
    "name": "turnip_mrpurple_T26-toasted.adpkg.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_mrpurple_T26-toasted.adpkg.zip",
+   "official": [
+    "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T26-toasted.adpkg/turnip_mrpurple_T26-toasted.adpkg.zip"
+   ],
+   "sha256": "318c41e96d828674f7936a7c0b562614fb0a7db66d33d5f41ffb8376c2f9b486",
+   "size": 3285344,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -747,7 +946,13 @@
    "group": "drivers",
    "name": "turnip_mrpurple_T30-toasted.adpkg.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_mrpurple_T30-toasted.adpkg.zip",
+   "official": [
+    "https://github.com/MrPurple666/purple-turnip/releases/download/vturnip_mrpurple_T30-toasted.adpkg/turnip_mrpurple_T30-toasted.adpkg.zip"
+   ],
+   "sha256": "f65b2d3353fd4aa7190bb5426b94468e99ffea7a58a830bc0c4651db89353227",
+   "size": 3713730,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -761,7 +966,10 @@
    "group": "drivers",
    "name": "turnip_v24.2.0_R22.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v24.2.0_R22.zip",
+   "sha256": "4a68e0965528b0a99227fdba7eeffbc9e40e172abb355e03cd395aa1a0e238a4",
+   "size": 2194580,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -775,7 +983,10 @@
    "group": "drivers",
    "name": "turnip_v24.3.0-R12.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0-R12.zip",
+   "sha256": "d7b8cf31df8f05315f383e05cb7349c733de4d53e0991debef7ded1aad79fa01",
+   "size": 2270629,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -789,7 +1000,10 @@
    "group": "drivers",
    "name": "turnip_v24.3.0_R2.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R2.zip",
+   "sha256": "c0921cc521f3ae79fc3a2b76634a4080c685143a5fbfb5786893839ecdf6219e",
+   "size": 2190775,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -803,7 +1017,10 @@
    "group": "drivers",
    "name": "turnip_v24.3.0_R5.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R5.zip",
+   "sha256": "58ea57906df9d666dbd10f9b42c384f94fc7d1b7d5aaf4313d8e0f3987ca53f5",
+   "size": 2224328,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -817,7 +1034,10 @@
    "group": "drivers",
    "name": "turnip_v24.3.0_R6.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R6.zip",
+   "sha256": "e17a12fb7a6c13a32d3f8152b827de213f071707777f500e05ea2edd5ecd309e",
+   "size": 2226810,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -831,7 +1051,10 @@
    "group": "drivers",
    "name": "turnip_v24.3.0_R7.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R7.zip",
+   "sha256": "d80b3e92cc201cebc3c6aea9c0bbfba41fd1b99e8ca291d46164a1fc26bc9701",
+   "size": 2227883,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -845,7 +1068,10 @@
    "group": "drivers",
    "name": "turnip_v24.3.0_R8.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v24.3.0_R8.zip",
+   "sha256": "e66c7555ad1df275dd0ac075b6c17dbb86d9bca74e80373a53fe4d9cb60aa182",
+   "size": 2237015,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -859,7 +1085,10 @@
    "group": "drivers",
    "name": "turnip_v25.0.0_R1.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.0.0_R1.zip",
+   "sha256": "a7d6e16262649a774f0e79f2ba346566a0fc692737d0f558267977e822c9fbe2",
+   "size": 2273273,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -873,7 +1102,10 @@
    "group": "drivers",
    "name": "turnip_v25.0.0_R5.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.0.0_R5.zip",
+   "sha256": "8b1085a6dea04c11e2d91c106f0ac71313f41b7c26b0617bfe8a1cd45512e24c",
+   "size": 2302916,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -887,7 +1119,10 @@
    "group": "drivers",
    "name": "Turnip_v25.0.0_R6.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.0.0_R6.zip",
+   "sha256": "f43599ae76bd1e355562f5e9b2ad238022bd36e9df27241ff644695ae14e7f1e",
+   "size": 2316803,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -901,7 +1136,10 @@
    "group": "drivers",
    "name": "turnip_v25.0.0_R8.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.0.0_R8.zip",
+   "sha256": "a768246a0b6ba2c2a8bd0e7f15846606517407d3e4840c59c0a4791e51c9564e",
+   "size": 2525849,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -915,7 +1153,10 @@
    "group": "drivers",
    "name": "turnip_v25.1.0_R1.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.1.0_R1.zip",
+   "sha256": "92347ab76f22bdae7ae4a9cce702278dd5237e70ee6064a976ba93d1f137e929",
+   "size": 2525849,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -929,7 +1170,10 @@
    "group": "drivers",
    "name": "turnip_v25.1.0_R5.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.1.0_R5.zip",
+   "sha256": "511615f5ddfa278ab0d822401e6df2e00d22095efff41526fd44a3a1835352a5",
+   "size": 3174647,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -943,7 +1187,10 @@
    "group": "drivers",
    "name": "Turnip_v25.1.0_R6.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.1.0_R6.zip",
+   "sha256": "efd8613279cc4b24c4a98d82096031dbcfad9ceae66d3005dc139f078be74cf8",
+   "size": 3182476,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -957,7 +1204,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R1.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R1.zip",
+   "sha256": "665fee2c2ec665a7d017b99a60ab6ac0eff21c331aac9d9a97847cb896580699",
+   "size": 3190273,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -971,7 +1221,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R10.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R10.zip",
+   "sha256": "5c48e713cc7d28e1aed04d38d86e7b330ac956c706f95bcd8759ede2b5b28080",
+   "size": 3223229,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -985,7 +1238,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R11.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R11.zip",
+   "sha256": "eea4b36f549b37e49ca58dade34cf675fd2364914a2669dcd0e0576d2b05aefb",
+   "size": 3241592,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -999,7 +1255,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R11_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R11_mem.zip",
+   "sha256": "dcf738ea6218222578f3395818baded7b15c5b9872df126c9e2f6719eb660012",
+   "size": 3238977,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1013,7 +1272,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R12.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R12.zip",
+   "sha256": "d74982b7a48e7ae48fb6df9b8eb2d88c6b5024daf4e0e992e10a3e34c7b09c2c",
+   "size": 3332348,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1027,7 +1289,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R12_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R12_mem.zip",
+   "sha256": "64a42a3fd83ba8378a8eb43f7ae40d7f918e432a8387d3119a0b27ed20da7a1d",
+   "size": 3329776,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1041,7 +1306,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R13.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R13.zip",
+   "sha256": "f6f2b236a4ccbc116422430fc8c2b45ef177bf6db332366cd5b43d7cdc9ff422",
+   "size": 3334698,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1055,7 +1323,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R13_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R13_mem.zip",
+   "sha256": "14d89835030f7c3bc89fd90d8486ed7017ef19976c5b6673e0830f01a1d7d785",
+   "size": 3332179,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1069,7 +1340,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R3_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R3_mem.zip",
+   "sha256": "3a1ad2d5abfcc9cea821cf4320e28ad4256fc3c95f2cf3770b0a4d4de5669b54",
+   "size": 3194237,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1083,7 +1357,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R4.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R4.zip",
+   "sha256": "047fed47d793c5037c5ac24210274e2986a3c0015fd412d356529baee962ceea",
+   "size": 3197916,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1097,7 +1374,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R4_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R4_mem.zip",
+   "sha256": "8da7cfe0338d0a09cfcf6e4404fc833a27e54204f00fb916caa92fb4a344e422",
+   "size": 3196696,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1111,7 +1391,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R5.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R5.zip",
+   "sha256": "54105cbb634e20aee22c7a6d540a09eebbc92524026771bbf864233cf2d31093",
+   "size": 3202743,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1125,7 +1408,10 @@
    "group": "drivers",
    "name": "turnip_v25.2.0_R5_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.2.0_R5_mem.zip",
+   "sha256": "673cc24c43f18e680b753c8d786d895bc57e34c5beebf99f0327f5ad857d0035",
+   "size": 3200727,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1139,7 +1425,10 @@
    "group": "drivers",
    "name": "Turnip_v25.2.0_R6.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R6.zip",
+   "sha256": "aae14bf0e3214bf97858130ef6fa3cbe3007025ea7265cd60967ba11692013d0",
+   "size": 3207371,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1153,7 +1442,10 @@
    "group": "drivers",
    "name": "Turnip_v25.2.0_R6_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R6_mem.zip",
+   "sha256": "833f56f58c47623db04b35d1e2703e9f87bc85954dba3b67681edb5412b95770",
+   "size": 3203591,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1167,7 +1459,10 @@
    "group": "drivers",
    "name": "Turnip_v25.2.0_R7.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R7.zip",
+   "sha256": "bcd0c1963d2b2a4f3366c8f12f948651a09af42c5f89bbe1d0335c1ed766ad63",
+   "size": 3211541,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1181,7 +1476,10 @@
    "group": "drivers",
    "name": "Turnip_v25.2.0_R7_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R7_mem.zip",
+   "sha256": "7047a129bbbe604be5473817700d0bcf1c19c6b0e524836d6e54a299f3bea177",
+   "size": 3208924,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1195,7 +1493,10 @@
    "group": "drivers",
    "name": "Turnip_v25.2.0_R8.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.2.0_R8.zip",
+   "sha256": "2b78c82415cc52be8f4dea3717a4ea04ca38af6e068bba900f2eacc6e2bd7765",
+   "size": 3212862,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1209,7 +1510,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R10.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R10.zip",
+   "sha256": "c61612a1680e5e24cde79ed7dffd8809f902474113f38cec91310eb6581a2e11",
+   "size": 3377837,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1223,7 +1527,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R11.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R11.zip",
+   "sha256": "57b73a649a7569f44dfb65f1372e5492cfca922a02b8111cc1c0c91c8ff71944",
+   "size": 3365037,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1237,7 +1544,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R3.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R3.zip",
+   "sha256": "59c988e7ea9c0bdb51734999a62b77c83d4c85f94b4584704a02be983876eb86",
+   "size": 2522664,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1251,7 +1561,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R3_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R3_mem.zip",
+   "sha256": "8f9ac19585cd5a491005dc2aa6f4ef3e6d9182687003a48e13dafd92f8f00a44",
+   "size": 2520334,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1265,7 +1578,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R4.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R4.zip",
+   "sha256": "82607474731df69d504642966868237b798879d7bdc7af9849796357e9007354",
+   "size": 2528255,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1279,7 +1595,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R4_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R4_mem.zip",
+   "sha256": "380a4d0c503bbded38e34350733ecbbc8a8eab56e4dfb4e9477962f1ce696936",
+   "size": 2525887,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1293,7 +1612,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R5.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R5.zip",
+   "sha256": "f07c6efae1e6ee319b186e7b26a975b60e1eb5043e37b0636e7d551c1b8d1baa",
+   "size": 2535407,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1307,7 +1629,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R5_one_ui7_fix.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R5_one_ui7_fix.zip",
+   "sha256": "0841db586500c7f2d3ec10bb9d1323b7ad185608ff020c2e1d67f4eccc7bd52d",
+   "size": 2535420,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1321,7 +1646,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R6.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R6.zip",
+   "sha256": "30efa27aad285a067acaaee6f517cc61873320ddc3800c2f5475e9cf2df20030",
+   "size": 2547949,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1335,7 +1663,10 @@
    "group": "drivers",
    "name": "Turnip_v25.3.0_R6_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.3.0_R6_mem.zip",
+   "sha256": "9e404ea3caddd71641120a1221b2e07d678c8a087231e106530a8a95bbb2df91",
+   "size": 2544928,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1349,7 +1680,10 @@
    "group": "drivers",
    "name": "Turnip_v25.3.0_R7.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v25.3.0_R7.zip",
+   "sha256": "fc6f39af9678c932e150a85b4ad0458c85d296aa8401b07250e08fa70385ca27",
+   "size": 2562315,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1363,7 +1697,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R8.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R8.zip",
+   "sha256": "dfc24224ea06a9d26c137394f21699f0afc7bf159a82cd9fa2e436523f031bd6",
+   "size": 2617254,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1377,7 +1714,10 @@
    "group": "drivers",
    "name": "turnip_v25.3.0_R9.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v25.3.0_R9.zip",
+   "sha256": "da48aa96dfd7b20ba61ca9845054d741fdc268d21617059e8da396fdf893cf42",
+   "size": 2619304,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1391,7 +1731,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R1.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R1.zip",
+   "sha256": "c2db7623bf097747e622d500c29a175e1f300bfa15eb5075dfa3de7dcd32c69e",
+   "size": 3436210,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1405,7 +1748,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R1_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R1_mem.zip",
+   "sha256": "068ce0bac3e18861c15124c365903eaaba8de6415c378a56d759e1803143d89c",
+   "size": 3446218,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1419,7 +1765,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R2.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R2.zip",
+   "sha256": "161e1118d42f6ca6f4989bca22101bb240b7901dbd6af27066af78262d10dc17",
+   "size": 3378563,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1433,7 +1782,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R2_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R2_mem.zip",
+   "sha256": "1ca2cab4bb1da163bc830f1face9f527e05aeef1b8aadcc59202fd09f5b3b8d4",
+   "size": 3378614,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1447,7 +1799,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R3.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R3.zip",
+   "sha256": "e61c5f591b673c3ac9faf3941bb6656074a944361b42efeab0d0891a84ddc801",
+   "size": 3392822,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1461,7 +1816,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R3_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R3_mem.zip",
+   "sha256": "842b09f834177001b7fa7eebc94e32707a6f469f4a56fec238481b1e262fb568",
+   "size": 3392960,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1475,7 +1833,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R4.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R4.zip",
+   "sha256": "567310da3842f2b95bc61ce59ae836b10888a73d96adac46a3395276f5db6806",
+   "size": 3445161,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1489,7 +1850,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R4_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R4_mem.zip",
+   "sha256": "b29419c1eaa3ca02287d3c9c64e5231abbb8a3e371ff800ad7e7e0df27f71f52",
+   "size": 3445181,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1503,7 +1867,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R5.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R5.zip",
+   "sha256": "274893269f4f073352a711f99de0f9b8f5817946b3755db5f68be133912c2c1e",
+   "size": 3440506,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1517,7 +1884,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R5_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R5_mem.zip",
+   "sha256": "7287debd117b8d3e6a8fb09180068dc7f7e411cf5dd88b6696c07ce9e4bba384",
+   "size": 3440405,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1531,7 +1901,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R6.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R6.zip",
+   "sha256": "c329b93392752002d1271f2a2c36ffb19ab3df79c9edefc26b53e14ef861db85",
+   "size": 3554294,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1545,7 +1918,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R6_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R6_mem.zip",
+   "sha256": "8946c3ccc4183e038fb7c16b9a8ce58dffdc227f481b31637219ceb0f475c5c6",
+   "size": 3553221,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1559,7 +1935,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R7.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R7.zip",
+   "sha256": "03bbc66d91c4005eb7f05716cd7b913d6e179e0ec716af0a08619c4a6dab5b47",
+   "size": 3480337,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1573,7 +1952,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R7_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R7_mem.zip",
+   "sha256": "6fef54eb4a7830a17af7d53ca713bcb63de7cb254c3500f5b1dc19f844f74c77",
+   "size": 3480339,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1587,7 +1969,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R8.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8.zip",
+   "sha256": "f19083ebc53f7dffd7e37bbf7bb14fa42cffd8af8ac8eb1dd5b102ff157c4169",
+   "size": 3108090,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1601,7 +1986,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R8_b1.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_b1.zip",
+   "sha256": "2c3b040c1591944784095177887b6b53dff3e91881d28044d8d02c8a839fc53b",
+   "size": 3586864,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1615,7 +2003,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R8_b12.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_b12.zip",
+   "sha256": "d9784136bc4eed0a549c303fbe4183481248e6a726bb955100df50fac34019b3",
+   "size": 3586259,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1629,7 +2020,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R8_b3.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_b3.zip",
+   "sha256": "96ec4c48ea46441c58757e72222ae0da14efa3e210e717f04e720ec2c9ee14b1",
+   "size": 3580803,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1643,7 +2037,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R8_b8.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_b8.zip",
+   "sha256": "c3e256da2ce356e9afe868c10a7f44c41b5b09da14f66eb340a8d2603a164166",
+   "size": 3700916,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1657,7 +2054,10 @@
    "group": "drivers",
    "name": "turnip_v26.0.0_R8_mem.zip",
    "from": "https://downloads.gamenative.app/drivers/turnip_v26.0.0_R8_mem.zip",
+   "sha256": "56aaedd4f78d2756cb1f3edbc7c35d78b3568eabf50c7590a5e657a08cd06765",
+   "size": 3108063,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1671,7 +2071,10 @@
    "group": "drivers",
    "name": "Turnip_v26.1.0_A12Fix.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v26.1.0_A12Fix.zip",
+   "sha256": "02229bd7253d1a7189b84314d974bffdfdd3c6d0f2b859f66230c0470005468f",
+   "size": 2550469,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1685,7 +2088,10 @@
    "group": "drivers",
    "name": "Turnip_v26.2.0_R1.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v26.2.0_R1.zip",
+   "sha256": "f1298f991dc99568aacd784fbf0829c135ff2d95b445b2b2225f7e5581314135",
+   "size": 3525006,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1699,7 +2105,10 @@
    "group": "drivers",
    "name": "Turnip_v26.2.0_R4_OneUI.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v26.2.0_R4_OneUI.zip",
+   "sha256": "b88f0a27800041965dd28ef446d3dd88eb5854c78ca9fccbc55baa2aa47e048f",
+   "size": 2700301,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1713,7 +2122,10 @@
    "group": "drivers",
    "name": "Turnip_v26.3.0-R3.zip",
    "from": "https://downloads.gamenative.app/drivers/Turnip_v26.3.0-R3.zip",
+   "sha256": "68f2bfff4215a455fa6069eed3d22989c89310c5f403f3a437dfb7d65126e4f2",
+   "size": 2804002,
    "licence": "MIT (Mesa Turnip)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "items": [
     {
      "type": "driver",
@@ -1727,7 +2139,9 @@
    "group": "drivers",
    "name": "v762.zip",
    "from": "https://downloads.gamenative.app/drivers/v762.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "32bef26586d0901b1c64680d6f61277eabc9b186eb421e5677fa7a0152474d87",
+   "size": 15016628,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -1741,7 +2155,9 @@
    "group": "drivers",
    "name": "v805.zip",
    "from": "https://downloads.gamenative.app/drivers/v805.zip",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "713e109c4caa2b7f829ce57b60dbfe49d0c93be0be22f69d6dc768ce38b19620",
+   "size": 12749148,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "items": [
     {
      "type": "driver",
@@ -1755,7 +2171,10 @@
    "group": "dxvk",
    "name": "dxvk-1.10.3.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-1.10.3.wcp",
+   "sha256": "14f173dcd6baa5789bfb9d03f788ac801ecbf2530a93b8a59f2270f63ee76418",
+   "size": 2851620,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1769,7 +2188,10 @@
    "group": "dxvk",
    "name": "dxvk-2.3.1.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.3.1.wcp",
+   "sha256": "6644f914a0150a593a71082f618f86d5600a85762a16cecfdfe312dd9340f573",
+   "size": 6464769,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1783,7 +2205,10 @@
    "group": "dxvk",
    "name": "dxvk-2.4.1-pre-reg.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.4.1-pre-reg.wcp",
+   "sha256": "3a1adf62c30669df0d6162581fc7fbb07ca4fa0d5b61d83e4f09fd464b6e844c",
+   "size": 3656532,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1797,7 +2222,10 @@
    "group": "dxvk",
    "name": "dxvk-2.4.1.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.4.1.wcp",
+   "sha256": "c6152bc61822b4ed42f84bbe99db8e123a385e0d729717bafd303227c6392643",
+   "size": 3529684,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1811,7 +2239,10 @@
    "group": "dxvk",
    "name": "dxvk-2.5.3.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.5.3.wcp",
+   "sha256": "20f77f7a8a6b3947033d747f13ab2e6d8e34f9d4b0e939376dbcb6657a90800e",
+   "size": 3748973,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1825,7 +2256,10 @@
    "group": "dxvk",
    "name": "dxvk-2.6.2.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.6.2.wcp",
+   "sha256": "873f59d65ba4c4c9333dd614354fc537b9679cf49d975bfb56326ad83e6d1b2b",
+   "size": 3870441,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1839,7 +2273,10 @@
    "group": "dxvk",
    "name": "dxvk-2.7.1.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK/dxvk-2.7.1.wcp",
+   "sha256": "80615cf57ab9fc5f704ce2812a26727f136cd6eaf0d52b9abb6285a386980c52",
+   "size": 3927117,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1853,7 +2290,10 @@
    "group": "dxvk",
    "name": "dxvk-gplasync-2.3.1-1.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.3.1-1.wcp",
+   "sha256": "f310a9b6f877182ebd57fb6e3a5e989b3826444cd0097f0c1e55578ebab9b372",
+   "size": 6473244,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1867,7 +2307,10 @@
    "group": "dxvk",
    "name": "dxvk-gplasync-2.4.1-1-pre-reg.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.4.1-1-pre-reg.wcp",
+   "sha256": "c2f3a626635403774603d8cf104e100df0c547f16dc5fa2539e0226a1f0f20a5",
+   "size": 3647982,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1881,7 +2324,10 @@
    "group": "dxvk",
    "name": "dxvk-gplasync-2.4.1-1.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.4.1-1.wcp",
+   "sha256": "5433ba9722e0754708888cef5d91319f5c476cedb28ebb22995dc87b87bd4a1f",
+   "size": 3531462,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1895,7 +2341,10 @@
    "group": "dxvk",
    "name": "dxvk-gplasync-2.5.3-1.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.5.3-1.wcp",
+   "sha256": "41bcffed7b0dc61b2629f7ae5a1f396e482ed7ecbea6443f0185a5227f41f6ab",
+   "size": 3750624,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1909,7 +2358,10 @@
    "group": "dxvk",
    "name": "dxvk-gplasync-2.6.2-1.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.6.2-1.wcp",
+   "sha256": "e77e6b4d066eafc08fce71d88a35ed2631d1a165b73e196b08126778bdb34481",
+   "size": 3871554,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1923,7 +2375,10 @@
    "group": "dxvk",
    "name": "dxvk-gplasync-2.7.1-1.wcp",
    "from": "https://github.com/Arihany/WinlatorWCPHub/releases/download/DXVK-GPLASYNC/dxvk-gplasync-2.7.1-1.wcp",
+   "sha256": "e905591a6abd56d9a51f983c294a57cbde1698e4a9be943a5e05228c9768b127",
+   "size": 3926295,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "items": [
     {
      "type": "dxvk",
@@ -1937,14 +2392,20 @@
    "group": "dxwrapper",
    "name": "d8vk-1.0.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/d8vk-1.0.tzst",
+   "sha256": "5e18deb3deedc937dad9974013c2039f8110f9baf6a520c4310ec888d8a59511",
+   "size": 1128672,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/d8vk-1.0.tzst"
   },
   {
    "group": "dxwrapper",
    "name": "dxvk-1.10.1.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.10.1.tzst",
+   "sha256": "a1de22b82bdec1a0dabb9d52084b3d542d305327059300aa01073f43ebd24ecc",
+   "size": 6724726,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-1.10.1.tzst",
    "items": [
     {
@@ -1959,7 +2420,10 @@
    "group": "dxwrapper",
    "name": "dxvk-1.10.3.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.10.3.tzst",
+   "sha256": "b337191462864958fab9d9bff2b1760a263ee330ce98b81aa59c478e795c2394",
+   "size": 7544894,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-1.10.3.tzst",
    "items": [
     {
@@ -1974,7 +2438,10 @@
    "group": "dxwrapper",
    "name": "dxvk-1.10.9-sarek.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.10.9-sarek.tzst",
+   "sha256": "1fdcb03b08eacb2852b4c8bb2345f47b61228f05017d5dff4287431b703aab59",
+   "size": 3696389,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-1.10.9-sarek.tzst",
    "items": [
     {
@@ -1989,14 +2456,20 @@
    "group": "dxwrapper",
    "name": "dxvk-1.11.1-sarek.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.11.1-sarek.tzst",
+   "sha256": "ce37f7d779e1f9ec51bc01997a7bedc31ad5e5c16f96c26840f9389f034fe3f2",
+   "size": 3645431,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-1.11.1-sarek.tzst"
   },
   {
    "group": "dxwrapper",
    "name": "dxvk-1.12.0-sarek.wcp",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.12.0-sarek.wcp",
+   "sha256": "da611a4f7e0777f5575ec30221814a0ff3e87ff57a2753b5e15a244d2daa0c2c",
+   "size": 3121711,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-1.12.0-sarek.wcp",
    "items": [
     {
@@ -2011,7 +2484,10 @@
    "group": "dxwrapper",
    "name": "dxvk-1.9.2.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-1.9.2.tzst",
+   "sha256": "c535a7376e404267011bb633f8c32c4b76ba9866fed72090a71ebd08bd2177e9",
+   "size": 3338221,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-1.9.2.tzst",
    "items": [
     {
@@ -2026,14 +2502,20 @@
    "group": "dxwrapper",
    "name": "dxvk-2.4.1-gplasync.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-2.4.1-gplasync.tzst",
+   "sha256": "7684a19e733310f9e3613a5ecd3443edb97c2d8c8a0e5db0d682887153e5058d",
+   "size": 9131308,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-2.4.1-gplasync.tzst"
   },
   {
    "group": "dxwrapper",
    "name": "dxvk-2.4.1.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-2.4.1.tzst",
+   "sha256": "f827bf18ef42d90be4637a987226453e392386a1a6ff160c13d3df52a62f2522",
+   "size": 9121924,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-2.4.1.tzst",
    "items": [
     {
@@ -2048,14 +2530,20 @@
    "group": "dxwrapper",
    "name": "dxvk-2.6.1-gplasync.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-2.6.1-gplasync.tzst",
+   "sha256": "b397293f0018a063fde5ec67030d44461e67606c645e9b81bfd845c5177fe158",
+   "size": 4740600,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-2.6.1-gplasync.tzst"
   },
   {
    "group": "dxwrapper",
    "name": "dxvk-2.7.1.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-2.7.1.tzst",
+   "sha256": "0255396bbedeec6d39e2192e2a3f8b2b9c1aa7efdfb5e445782bf10698bc0652",
+   "size": 4768366,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-2.7.1.tzst",
    "items": [
     {
@@ -2070,14 +2558,26 @@
    "group": "dxwrapper",
    "name": "dxvk-async-1.10.3.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/dxvk-async-1.10.3.tzst",
+   "sha256": "6c60805d22386b623eb87255e9f7b97759e3df69924f707cd8516f27945bab6e",
+   "size": 10075341,
    "licence": "Zlib (DXVK)",
+   "licenceUrl": "https://github.com/doitsujin/dxvk/blob/master/LICENSE",
    "path": "dxwrapper/dxvk-async-1.10.3.tzst"
   },
   {
    "group": "dxwrapper",
    "name": "vkd3d-2.12.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-2.12.tzst",
+   "sha256": "ea1411f26b529cd4c6f3322ede1ab753273c8321258605dbf94789785c081946",
+   "size": 2140490,
    "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
+   "source": {
+    "repo": "HansKristian-Work/vkd3d-proton",
+    "ref": "v2.12.",
+    "exact": true,
+    "note": "release named in the file name"
+   },
    "path": "dxwrapper/vkd3d-2.12.tzst",
    "items": [
     {
@@ -2092,7 +2592,16 @@
    "group": "dxwrapper",
    "name": "vkd3d-2.13.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-2.13.tzst",
+   "sha256": "cd2862aadb58371954c35465d5005b5fcd55b8c96c75a79bbc58d44d54edada1",
+   "size": 2134905,
    "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
+   "source": {
+    "repo": "HansKristian-Work/vkd3d-proton",
+    "ref": "v2.13.",
+    "exact": true,
+    "note": "release named in the file name"
+   },
    "path": "dxwrapper/vkd3d-2.13.tzst",
    "items": [
     {
@@ -2107,14 +2616,32 @@
    "group": "dxwrapper",
    "name": "vkd3d-2.14.1.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-2.14.1.tzst",
+   "sha256": "b17d32de8178201f15a49ac5cd137778f8477c7fe75343963e2158b86a8159ba",
+   "size": 2352920,
    "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
+   "source": {
+    "repo": "HansKristian-Work/vkd3d-proton",
+    "ref": "v2.14.1.",
+    "exact": true,
+    "note": "release named in the file name"
+   },
    "path": "dxwrapper/vkd3d-2.14.1.tzst"
   },
   {
    "group": "dxwrapper",
    "name": "vkd3d-2.6.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-2.6.tzst",
+   "sha256": "664a463df6ac8bf433f8ef6030dbf31de33b760fc722bb9666b79c22b5e64f25",
+   "size": 1805143,
    "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
+   "source": {
+    "repo": "HansKristian-Work/vkd3d-proton",
+    "ref": "v2.6.",
+    "exact": true,
+    "note": "release named in the file name"
+   },
    "path": "dxwrapper/vkd3d-2.6.tzst",
    "items": [
     {
@@ -2129,7 +2656,17 @@
    "group": "dxwrapper",
    "name": "vkd3d-3.0.1-4559a01d.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-3.0.1-4559a01d.tzst",
+   "sha256": "93e204fc2720ab277df0f9d713278e5ac105a60f8d1d2a4fa225fb44e3d77c54",
+   "size": 3710861,
    "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
+   "source": {
+    "repo": "HansKristian-Work/vkd3d-proton",
+    "ref": "4559a01d0cc4976caa0c01949eedf119f041a6e5",
+    "commit": "4559a01d0cc4976caa0c01949eedf119f041a6e5",
+    "exact": true,
+    "note": "commit named in the file name"
+   },
    "path": "dxwrapper/vkd3d-3.0.1-4559a01d.tzst",
    "items": [
     {
@@ -2144,7 +2681,16 @@
    "group": "dxwrapper",
    "name": "vkd3d-3.0b.tzst",
    "from": "https://downloads.gamenative.app/dxwrapper/vkd3d-3.0b.tzst",
+   "sha256": "fdace3d5894af70f119e17baad44c96885387a0e333c419b94157efedd78185d",
+   "size": 3978975,
    "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
+   "source": {
+    "repo": "HansKristian-Work/vkd3d-proton",
+    "ref": "v3.0b",
+    "exact": true,
+    "note": "release named in the file name"
+   },
    "path": "dxwrapper/vkd3d-3.0b.tzst",
    "items": [
     {
@@ -2159,7 +2705,10 @@
    "group": "fexcore",
    "name": "FEXCore-2601-217d039.wcp",
    "from": "https://downloads.gamenative.app/FEXCore-2601-217d039.wcp",
+   "sha256": "cd343dfe4bb673469779e0001b298b4ea492bd0da8df99f4f07f62a1274c77fe",
+   "size": 1335656,
    "licence": "MIT (FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
    "items": [
     {
      "type": "fexcore",
@@ -2173,7 +2722,10 @@
    "group": "fexcore",
    "name": "FEXCore-2607.wcp",
    "from": "https://downloads.gamenative.app/FEXCore-2607.wcp",
+   "sha256": "3caeb61790c501fb6268570cbc12248046d76f78c37892d25cce323bc0da25ed",
+   "size": 1864472,
    "licence": "MIT (FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
    "items": [
     {
      "type": "fexcore",
@@ -2187,7 +2739,10 @@
    "group": "fexcore",
    "name": "FEXCore-2608.wcp",
    "from": "https://downloads.gamenative.app/FEXCore-2608.wcp",
+   "sha256": "aa822c0343f73d213d06a3f72ce002afb41b51751c6bef3119313769ac697a8c",
+   "size": 1884384,
    "licence": "MIT (FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
    "items": [
     {
      "type": "fexcore",
@@ -2201,7 +2756,10 @@
    "group": "fexcore",
    "name": "FEXCore-2609.wcp",
    "from": "https://downloads.gamenative.app/FEXCore-2609.wcp",
+   "sha256": "64f5538b841f533a7c9f07446c9db0650a754059966080c91340e3fd281a29d7",
+   "size": 1973552,
    "licence": "MIT (FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
    "items": [
     {
      "type": "fexcore",
@@ -2215,196 +2773,291 @@
    "group": "graphics-driver",
    "name": "adrenotools-turnip25.1.0.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.1.0.tzst",
+   "sha256": "b3824227a3bcac367352bae86a34ed95add9b99fae50c16b7c7f48506d7ce197",
+   "size": 2593869,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/adrenotools-turnip25.1.0.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-turnip25.3.0_R11.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.3.0_R11.tzst",
+   "sha256": "2af295136d29ee40cd3b6e3584d4b0036f9fd091c039a14656bb4bd11cb76cd5",
+   "size": 3137612,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/adrenotools-turnip25.3.0_R11.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-turnip25.3.0_R3_Auto.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.3.0_R3_Auto.tzst",
+   "sha256": "b27993507f70cac00cbc9c266f8574c0f47d74642eaaa0a22ac0ad5c3ea2a594",
+   "size": 2394849,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/adrenotools-turnip25.3.0_R3_Auto.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-turnip25.3.0_R3_Gmem.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.3.0_R3_Gmem.tzst",
+   "sha256": "1d759224be7a2666f12e2f0d0491224507e484bbda26122ee1c213db8dd3b0dd",
+   "size": 2392378,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/adrenotools-turnip25.3.0_R3_Gmem.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-turnip25.3.0_R6_Gmem.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip25.3.0_R6_Gmem.tzst",
+   "sha256": "56977970269fc06149d44f542b36ec3d2c55b1594dffa968a4facc35d25dea8c",
+   "size": 2402808,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/adrenotools-turnip25.3.0_R6_Gmem.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-turnip26.0.0_R4.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip26.0.0_R4.tzst",
+   "sha256": "ed1104cbf4387e28638c52959c651f6302fc515761289e104ab2953977bd1ba4",
+   "size": 3211505,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/adrenotools-turnip26.0.0_R4.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-turnip26.0.0_R8.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-turnip26.0.0_R8.tzst",
+   "sha256": "a79e67a397f94e8e809676c7753580db77b390b7f7631368256af33d0654cd11",
+   "size": 2618849,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/adrenotools-turnip26.0.0_R8.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-Turnip_Gen8_V25.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-Turnip_Gen8_V25.tzst",
+   "sha256": "b8c33c0feae648c0c73533000ed17efdcb653d7dce06a0a5c8d7d0f58b9a0e44",
+   "size": 2529392,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/adrenotools-Turnip_Gen8_V25.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-v762.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-v762.tzst",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "c786b45d7f02310c7c348e55f151cc822b0468a14110ec6c0abfaa493f323e08",
+   "size": 16492574,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "path": "graphics_driver/adrenotools-v762.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "adrenotools-v805.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/adrenotools-v805.tzst",
-   "licence": "Proprietary (Qualcomm Adreno driver, as redistributed by GameNative)",
+   "sha256": "81ff78581eb9acc3d6f10c1688ea30a05bec07e17627497232dd60a215c5ba37",
+   "size": 12237321,
+   "licence": "Proprietary (Qualcomm Adreno driver; no licence accompanies the files, which are marked \"Qualcomm Confidential and Proprietary\"; packaged by GameNative)",
    "path": "graphics_driver/adrenotools-v805.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "extra_libs.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/extra_libs.tzst",
+   "sha256": "5e42e95bc79f098f22822cdee25a21099e585536db01927216ea30a6eb7ca27f",
+   "size": 21229475,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/extra_libs.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "libvulkan_wrapper.tar.xz",
    "from": "https://downloads.gamenative.app/graphics_driver/libvulkan_wrapper.tar.xz",
-   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "sha256": "e634370220234bdd3c1f89c34cf3bca514c5c38d8784e64e4ce07d90da686e58",
+   "size": 3103336,
+   "licence": "MIT (Mesa-based Vulkan wrapper; libadrenotools BSD-2-Clause, https://github.com/bylaws/libadrenotools/blob/master/LICENSE)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/libvulkan_wrapper.tar.xz"
   },
   {
    "group": "graphics-driver",
    "name": "turnip-24.1.0.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/turnip-24.1.0.tzst",
+   "sha256": "4ffe69bc9071871ee7719911b0ecb2f7ba4f3e43d0f80db77cd39d2bfaf76334",
+   "size": 1656806,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/turnip-24.1.0.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "turnip-25.0.0.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/turnip-25.0.0.tzst",
+   "sha256": "783cb1f0ae481fa79afaefd4c421d68ca13f8ce46a34367e93c678cc2befe696",
+   "size": 1923236,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/turnip-25.0.0.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "turnip-25.1.0.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/turnip-25.1.0.tzst",
+   "sha256": "e4cfac45d4064da80c5a0c501d5237e85c2492a9da39e404c0cb31e1a609939b",
+   "size": 1948462,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/turnip-25.1.0.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "turnip-25.2.0.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/turnip-25.2.0.tzst",
+   "sha256": "d4b4762beda16be7dbd9f29f0bb0770e736465faf158435a003937d25081fca8",
+   "size": 2184899,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/turnip-25.2.0.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "turnip-25.3.0.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/turnip-25.3.0.tzst",
+   "sha256": "aafacd43656d43908510516c7fbc1fb343dfb9fb77e87113749550fb5e51ffb6",
+   "size": 2221157,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/turnip-25.3.0.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "virgl-23.1.9.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/virgl-23.1.9.tzst",
+   "sha256": "6ed76575a24894432fa43e03e98ca1273bd1d1e393587bc53f7d8ca5bf36311f",
+   "size": 3324475,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/virgl-23.1.9.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "vortek-2.0.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/vortek-2.0.tzst",
-   "licence": "Unlicensed binary (Winlator Vortek, as redistributed by GameNative)",
+   "sha256": "e32dc285600dfb30f3682cc29603348ddb231f45247f93ecf799939778ee292a",
+   "size": 115516,
+   "licence": "Proprietary binary (Winlator's Vortek; no licence accompanies it, no source published)",
    "path": "graphics_driver/vortek-2.0.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "vortek-2.1.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/vortek-2.1.tzst",
-   "licence": "Unlicensed binary (Winlator Vortek, as redistributed by GameNative)",
+   "sha256": "b81e4751b093a4bdb8963cbc8210e89b5b627907c3500e2b2dc3de7d002fb251",
+   "size": 120123,
+   "licence": "Proprietary binary (Winlator's Vortek; no licence accompanies it, no source published)",
    "path": "graphics_driver/vortek-2.1.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "wrapper-gamenative-20260724.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/wrapper-gamenative-20260724.tzst",
-   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "sha256": "1a546621cf285b50a6de47aeb0ada4a298d41ac24fc5ca2cdc46673859056d37",
+   "size": 747871,
+   "licence": "MIT (Mesa-based Vulkan wrapper; libadrenotools BSD-2-Clause, https://github.com/bylaws/libadrenotools/blob/master/LICENSE)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/wrapper-gamenative-20260724.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "wrapper-leegao.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/wrapper-leegao.tzst",
-   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "official": [
+    "https://github.com/The412Banner/winlator-contents/releases/download/wrappers-v1/wmali-leegao.tzst"
+   ],
+   "sha256": "e0345e81db8893aa7882869583cd970d532cf3e92c0a1e87a9aba366b46a5da9",
+   "size": 2365265,
+   "licence": "MIT (Mesa-based Vulkan wrapper; libadrenotools BSD-2-Clause, https://github.com/bylaws/libadrenotools/blob/master/LICENSE)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/wrapper-leegao.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "wrapper-legacy.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/wrapper-legacy.tzst",
-   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "official": [
+    "https://github.com/The412Banner/winlator-contents/releases/download/wrappers-v1/bannerlator-legacy.tzst"
+   ],
+   "sha256": "9e5b2539c1b86afdfd8c144a165cfa03b9c500fe0d82ae6216a6859c00bf460f",
+   "size": 5725821,
+   "licence": "MIT (Mesa-based Vulkan wrapper; libadrenotools BSD-2-Clause, https://github.com/bylaws/libadrenotools/blob/master/LICENSE)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/wrapper-legacy.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "wrapper-v2.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/wrapper-v2.tzst",
-   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "sha256": "68bfa91d88d374b67a7dbc2079afbf243f42f1c7d5dffd0c84a7a276c94f4526",
+   "size": 5435191,
+   "licence": "MIT (Mesa-based Vulkan wrapper; libadrenotools BSD-2-Clause, https://github.com/bylaws/libadrenotools/blob/master/LICENSE)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/wrapper-v2.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "wrapper.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/wrapper.tzst",
-   "licence": "See upstream (Vulkan wrapper builds, as redistributed by GameNative)",
+   "official": [
+    "https://github.com/The412Banner/winlator-contents/releases/download/wrappers-v1/wmali-wrapper.tzst"
+   ],
+   "sha256": "2005169d30ab7558b0c404ff8a3d781cddfde2f012531e097ccc95c423a706a5",
+   "size": 3795109,
+   "licence": "MIT (Mesa-based Vulkan wrapper; libadrenotools BSD-2-Clause, https://github.com/bylaws/libadrenotools/blob/master/LICENSE)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/wrapper.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "zink-22.2.5.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/zink-22.2.5.tzst",
+   "sha256": "5231f32412a9d9737f90b464cf098d84e9d93283ba513d8ff30a84f26a3da669",
+   "size": 3701982,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/zink-22.2.5.tzst"
   },
   {
    "group": "graphics-driver",
    "name": "zink_dlls.tzst",
    "from": "https://downloads.gamenative.app/graphics_driver/zink_dlls.tzst",
+   "sha256": "efe27f0de6a55bfb6c2e9eab79b6baaae64b35af81ce49c097de6b720f258cbb",
+   "size": 8170693,
    "licence": "MIT (Mesa)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "graphics_driver/zink_dlls.tzst"
   },
   {
    "group": "vkd3d",
    "name": "vkd3d-proton-3.0.1.wcp",
    "from": "https://downloads.gamenative.app/drivers/vkd3d-proton-3.0.1.wcp",
+   "sha256": "772826a539ef8dffb6cf770449ef7d9f2ed232720dd3377052967c2167622553",
+   "size": 3905888,
    "licence": "LGPL-2.1-or-later (VKD3D-Proton)",
+   "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
+   "source": {
+    "repo": "HansKristian-Work/vkd3d-proton",
+    "ref": "v3.0.1.",
+    "exact": true,
+    "note": "release named in the file name"
+   },
    "items": [
     {
      "type": "vkd3d",
@@ -2418,84 +3071,149 @@
    "group": "wincomponents",
    "name": "ddraw.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/ddraw.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "eabb2d59ce7060767996d0c9597ee8772059126a3af01698e59a5e7905e49867",
+   "size": 166133,
+   "licence": "MIT (cnc-ddraw 6.6.0.0)",
+   "licenceUrl": "https://github.com/FunkyFr3sh/cnc-ddraw/blob/master/LICENSE",
    "path": "wincomponents/ddraw.tzst"
   },
   {
    "group": "wincomponents",
    "name": "direct3d.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/direct3d.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "149d55436e050bfa3fe8caf650cb97ddb2bc9fa99cd96869bd2bc4977b708fb5",
+   "size": 31207067,
+   "hosting": "link",
+   "prohibitedBy": "Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG)",
+   "makerDownloads": [
+    "https://www.microsoft.com/en-us/download/details.aspx?id=8109"
+   ],
+   "licence": "Proprietary (Microsoft D3DX/D3DCompiler from the DirectX End User Runtime; d3dx9_43.dll is byte-identical to the June 2010 redistributable)",
    "path": "wincomponents/direct3d.tzst"
   },
   {
    "group": "wincomponents",
    "name": "directmusic.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/directmusic.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "eb906732d14766641edfae0b2d722c36f4632de7fa321a5844037115b513b77e",
+   "size": 337109,
+   "hosting": "link",
+   "prohibitedBy": "Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG)",
+   "licence": "Proprietary (Microsoft DirectMusic 5.3.1.904, DirectX 9 runtime)",
    "path": "wincomponents/directmusic.tzst"
   },
   {
    "group": "wincomponents",
    "name": "directplay.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/directplay.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "70eb81449230af66286f5b4d5922dca13057600c35d4cdfe91930e966c2386d9",
+   "size": 429728,
+   "hosting": "link",
+   "prohibitedBy": "Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG)",
+   "licence": "Proprietary (Microsoft DirectPlay 5.3.1.904, DirectX 9 runtime)",
    "path": "wincomponents/directplay.tzst"
   },
   {
    "group": "wincomponents",
    "name": "directshow.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/directshow.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "aa682b7ee6e5903e4571bfe5a8dc9b05d0a9f05cd860cfdc810f2ddd3745e9b4",
+   "size": 2209278,
+   "hosting": "link",
+   "prohibitedBy": "Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf)",
+   "licence": "Proprietary (Microsoft DirectShow, Windows 7 SP1 system files)",
    "path": "wincomponents/directshow.tzst"
   },
   {
    "group": "wincomponents",
    "name": "directsound.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/directsound.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "72f0e880eef1387a55602ac02b07ef26778d23c2f70d931bd2d13e92f8dc99d4",
+   "size": 434853,
+   "hosting": "link",
+   "prohibitedBy": "Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf)",
+   "licence": "Proprietary (Microsoft DirectSound, Windows 7 system file)",
    "path": "wincomponents/directsound.tzst"
   },
   {
    "group": "wincomponents",
    "name": "openal.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/openal.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "5e849dd182eb7361624804d508b52713dcbf8f203355e062a5928b843b3b4a47",
+   "size": 6272189,
+   "licence": "LGPL-2.0-or-later (OpenAL Soft 1.25.1)",
+   "licenceUrl": "https://github.com/kcat/openal-soft/blob/master/COPYING",
+   "source": {
+    "repo": "kcat/openal-soft",
+    "ref": "1.25.1",
+    "exact": true,
+    "note": "version in the DLLs"
+   },
    "path": "wincomponents/openal.tzst"
   },
   {
    "group": "wincomponents",
    "name": "opengl.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/opengl.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "efe27f0de6a55bfb6c2e9eab79b6baaae64b35af81ce49c097de6b720f258cbb",
+   "size": 8170693,
+   "licence": "MIT (Mesa: opengl32/libgallium_wgl, same files as zink_dlls.tzst)",
+   "licenceUrl": "https://docs.mesa3d.org/license.html",
    "path": "wincomponents/opengl.tzst"
   },
   {
    "group": "wincomponents",
    "name": "vcrun2010.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/vcrun2010.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "9def7b4b5c31c839d155f05e372e0e9ce4968b57f815c1abf93b7735e7d0ceb7",
+   "size": 1038731,
+   "hosting": "link",
+   "prohibitedBy": "Microsoft Visual C++ 2010 Runtime Libraries with SP1 licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (eula.rtf in vcredist_x86.exe, https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe)",
+   "makerDownloads": [
+    "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
+   ],
+   "licence": "Proprietary (Microsoft Visual C++ 2010 runtime)",
    "path": "wincomponents/vcrun2010.tzst"
   },
   {
    "group": "wincomponents",
    "name": "wmdecoder.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/wmdecoder.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "49a9f29fa099d4568b6c43a0f710e6f5e0dba3c1eb401325bbda9c82c8937b9b",
+   "size": 2717456,
+   "hosting": "link",
+   "prohibitedBy": "Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf)",
+   "licence": "Proprietary (Microsoft Windows Media decoders, Windows 7 SP1 system files)",
    "path": "wincomponents/wmdecoder.tzst"
   },
   {
    "group": "wincomponents",
    "name": "xaudio.tzst",
    "from": "https://downloads.gamenative.app/wincomponents/xaudio.tzst",
-   "licence": "Proprietary (Microsoft redistributables, as redistributed by GameNative/Winlator)",
+   "sha256": "2f80fd6242136b543ee2e1c8fb7daa9c0bcd0c318886ca502f84f456c83bbc43",
+   "size": 2329991,
+   "hosting": "link",
+   "prohibitedBy": "Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG)",
+   "makerDownloads": [
+    "https://www.microsoft.com/en-us/download/details.aspx?id=8109"
+   ],
+   "licence": "Proprietary (Microsoft XAudio2/XACT/X3DAudio, DirectX June 2010 runtime)",
    "path": "wincomponents/xaudio.tzst"
   },
   {
    "group": "wine",
    "name": "proton-10.0-4-arm64ec.wcp",
    "from": "https://downloads.gamenative.app/proton-10.0-4-arm64ec.wcp",
-   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "sha256": "63aaa3d91ace89b91a7c3f4a6473c11938e1f44f79afa0e186d044e227c859ec",
+   "size": 270848000,
+   "licence": "LGPL-2.1-or-later (Wine/Proton, GameNative proton-wine builds)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_10.0",
+    "exact": false,
+    "note": "GameNative names no commit for this build (its binaries say only \"wine-10.0\")"
+   },
    "items": [
     {
      "type": "proton",
@@ -2509,7 +3227,16 @@
    "group": "wine",
    "name": "proton-10.0-4-x86_64.wcp",
    "from": "https://downloads.gamenative.app/proton-10.0-4-x86_64.wcp",
-   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "sha256": "36a21542e053cf035b5d87aeeef4fb27a207a850d49001ea29e74ea41da97a1b",
+   "size": 200296768,
+   "licence": "LGPL-2.1-or-later (Wine/Proton, GameNative proton-wine builds)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_10.0",
+    "exact": false,
+    "note": "GameNative names no commit for this build (its binaries say only \"wine-10.0\")"
+   },
    "items": [
     {
      "type": "proton",
@@ -2523,7 +3250,16 @@
    "group": "wine",
    "name": "proton-10.0-arm64ec.wcp",
    "from": "https://downloads.gamenative.app/proton-10.0-arm64ec.wcp",
-   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "sha256": "c1638b1f830304222660e338bc032099145ad210d4e36a07d91f39c750a062f7",
+   "size": 262671004,
+   "licence": "LGPL-2.1-or-later (Wine/Proton, GameNative proton-wine builds)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_10.0",
+    "exact": false,
+    "note": "GameNative names no commit for this build (its binaries say only \"wine-10.0\")"
+   },
    "items": [
     {
      "type": "proton",
@@ -2537,7 +3273,20 @@
    "group": "wine",
    "name": "proton-11.0-1-arm64ec.wcp",
    "from": "https://downloads.gamenative.app/proton-11.0-1-arm64ec.wcp",
-   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "official": [
+    "https://github.com/GameNative/proton-wine/releases/download/build-p11-20260502-1-sdk35/proton-11.0-1-arm64ec.wcp"
+   ],
+   "sha256": "be248bf8baf354c4426f997605c6b78debbc93b091a3be3339c1bbc2176b596f",
+   "size": 276851384,
+   "licence": "LGPL-2.1-or-later (Wine/Proton, GameNative proton-wine builds)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "build-p11-20260502-1-sdk35",
+    "commit": "7c98acd6ea",
+    "exact": true,
+    "note": "GameNative publishes this exact file on that release"
+   },
    "items": [
     {
      "type": "proton",
@@ -2551,7 +3300,20 @@
    "group": "wine",
    "name": "proton-11.0-1-x86_64.wcp",
    "from": "https://downloads.gamenative.app/proton-11.0-1-x86_64.wcp",
-   "licence": "LGPL-2.1-or-later (Wine/Proton; GameNative proton-wine sources)",
+   "official": [
+    "https://github.com/GameNative/proton-wine/releases/download/build-p11-20260502-1-sdk35/proton-11.0-1-x86_64.wcp"
+   ],
+   "sha256": "1e9c732f81cbb8ec4e1b3e89efdda60a2d1642031b05c52548ea164ff4a65743",
+   "size": 205308432,
+   "licence": "LGPL-2.1-or-later (Wine/Proton, GameNative proton-wine builds)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "build-p11-20260502-1-sdk35",
+    "commit": "7c98acd6ea",
+    "exact": true,
+    "note": "GameNative publishes this exact file on that release"
+   },
    "items": [
     {
      "type": "proton",
