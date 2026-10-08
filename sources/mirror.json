@@ -2574,7 +2574,7 @@
    "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
    "source": {
     "repo": "HansKristian-Work/vkd3d-proton",
-    "ref": "v2.12.",
+    "ref": "v2.12",
     "exact": true,
     "note": "release named in the file name"
    },
@@ -2598,7 +2598,7 @@
    "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
    "source": {
     "repo": "HansKristian-Work/vkd3d-proton",
-    "ref": "v2.13.",
+    "ref": "v2.13",
     "exact": true,
     "note": "release named in the file name"
    },
@@ -2622,7 +2622,7 @@
    "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
    "source": {
     "repo": "HansKristian-Work/vkd3d-proton",
-    "ref": "v2.14.1.",
+    "ref": "v2.14.1",
     "exact": true,
     "note": "release named in the file name"
    },
@@ -2638,7 +2638,7 @@
    "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
    "source": {
     "repo": "HansKristian-Work/vkd3d-proton",
-    "ref": "v2.6.",
+    "ref": "v2.6",
     "exact": true,
     "note": "release named in the file name"
    },
@@ -3054,7 +3054,7 @@
    "licenceUrl": "https://github.com/HansKristian-Work/vkd3d-proton/blob/master/LICENSE",
    "source": {
     "repo": "HansKristian-Work/vkd3d-proton",
-    "ref": "v3.0.1.",
+    "ref": "v3.0.1",
     "exact": true,
     "note": "release named in the file name"
    },
