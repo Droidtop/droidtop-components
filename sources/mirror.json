@@ -1,5 +1,5 @@
 {
- "about": "Files droidtop-components offers. Seeded 2026-10-08 with exactly what droidtop users could get through GameNative's component list and download host. hosting \"link\" (terms that explicitly forbid redistribution, prohibitedBy cites the clause): not re-hosted, offered from its maker's URL with the SHA-256 recorded here. Licences: README.md.",
+ "about": "Files droidtop-components offers. Seeded 2026-10-08 with exactly what droidtop users could get through GameNative's component list and download host. hosting \"link\" (a takedown request, or terms that forbid it and the owner chose not to host; prohibitedBy says which): not re-hosted, offered from its maker's URL with the SHA-256 recorded here. Licences: README.md.",
  "files": [
   {
    "group": "base",
@@ -120,9 +120,8 @@
    "from": "https://downloads.gamenative.app/container_files/container_pattern_common_20260821.tzst",
    "sha256": "c62311ac7a10a149f33cd1b2fcdf9f79c8a6b35d8b46066b33108c003b7e85c6",
    "size": 41592095,
-   "hosting": "link",
-   "prohibitedBy": "Fonts inside: arial/times/verdana etc. carry Monotype's notice \"You may not copy or distribute this software.\"; msyh.ttc and SimHei.ttf carry \"Microsoft supplied font ... Any other use is prohibited.\" (each font's own name table)",
    "licence": "Mixed: Wine prefix files (LGPL-2.1-or-later) plus Microsoft/Monotype and other commercial fonts",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Fonts inside: arial/times/verdana etc. carry Monotype's notice \"You may not copy or distribute this software.\"; msyh.ttc and SimHei.ttf carry \"Microsoft supplied font ... Any other use is prohibited.\" (each font's own name table). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "container_files/container_pattern_common_20260821.tzst"
   },
   {
@@ -3083,12 +3082,11 @@
    "from": "https://downloads.gamenative.app/wincomponents/direct3d.tzst",
    "sha256": "149d55436e050bfa3fe8caf650cb97ddb2bc9fa99cd96869bd2bc4977b708fb5",
    "size": 31207067,
-   "hosting": "link",
-   "prohibitedBy": "Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG)",
    "makerDownloads": [
     "https://www.microsoft.com/en-us/download/details.aspx?id=8109"
    ],
    "licence": "Proprietary (Microsoft D3DX/D3DCompiler from the DirectX End User Runtime; d3dx9_43.dll is byte-identical to the June 2010 redistributable)",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "wincomponents/direct3d.tzst"
   },
   {
@@ -3097,9 +3095,8 @@
    "from": "https://downloads.gamenative.app/wincomponents/directmusic.tzst",
    "sha256": "eb906732d14766641edfae0b2d722c36f4632de7fa321a5844037115b513b77e",
    "size": 337109,
-   "hosting": "link",
-   "prohibitedBy": "Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG)",
    "licence": "Proprietary (Microsoft DirectMusic 5.3.1.904, DirectX 9 runtime)",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "wincomponents/directmusic.tzst"
   },
   {
@@ -3108,9 +3105,8 @@
    "from": "https://downloads.gamenative.app/wincomponents/directplay.tzst",
    "sha256": "70eb81449230af66286f5b4d5922dca13057600c35d4cdfe91930e966c2386d9",
    "size": 429728,
-   "hosting": "link",
-   "prohibitedBy": "Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG)",
    "licence": "Proprietary (Microsoft DirectPlay 5.3.1.904, DirectX 9 runtime)",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "wincomponents/directplay.tzst"
   },
   {
@@ -3119,9 +3115,8 @@
    "from": "https://downloads.gamenative.app/wincomponents/directshow.tzst",
    "sha256": "aa682b7ee6e5903e4571bfe5a8dc9b05d0a9f05cd860cfdc810f2ddd3745e9b4",
    "size": 2209278,
-   "hosting": "link",
-   "prohibitedBy": "Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf)",
    "licence": "Proprietary (Microsoft DirectShow, Windows 7 SP1 system files)",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "wincomponents/directshow.tzst"
   },
   {
@@ -3130,9 +3125,8 @@
    "from": "https://downloads.gamenative.app/wincomponents/directsound.tzst",
    "sha256": "72f0e880eef1387a55602ac02b07ef26778d23c2f70d931bd2d13e92f8dc99d4",
    "size": 434853,
-   "hosting": "link",
-   "prohibitedBy": "Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf)",
    "licence": "Proprietary (Microsoft DirectSound, Windows 7 system file)",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "wincomponents/directsound.tzst"
   },
   {
@@ -3167,12 +3161,11 @@
    "from": "https://downloads.gamenative.app/wincomponents/vcrun2010.tzst",
    "sha256": "9def7b4b5c31c839d155f05e372e0e9ce4968b57f815c1abf93b7735e7d0ceb7",
    "size": 1038731,
-   "hosting": "link",
-   "prohibitedBy": "Microsoft Visual C++ 2010 Runtime Libraries with SP1 licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (eula.rtf in vcredist_x86.exe, https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe)",
    "makerDownloads": [
     "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
    ],
    "licence": "Proprietary (Microsoft Visual C++ 2010 runtime)",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Microsoft Visual C++ 2010 Runtime Libraries with SP1 licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (eula.rtf in vcredist_x86.exe, https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "wincomponents/vcrun2010.tzst"
   },
   {
@@ -3181,9 +3174,8 @@
    "from": "https://downloads.gamenative.app/wincomponents/wmdecoder.tzst",
    "sha256": "49a9f29fa099d4568b6c43a0f710e6f5e0dba3c1eb401325bbda9c82c8937b9b",
    "size": 2717456,
-   "hosting": "link",
-   "prohibitedBy": "Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf)",
    "licence": "Proprietary (Microsoft Windows Media decoders, Windows 7 SP1 system files)",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Microsoft Windows 7 licence terms, 8. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/7-ultimate/retail-packaged/Windows_7%20Ultimate_English.pdf). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "wincomponents/wmdecoder.tzst"
   },
   {
@@ -3192,12 +3184,11 @@
    "from": "https://downloads.gamenative.app/wincomponents/xaudio.tzst",
    "sha256": "2f80fd6242136b543ee2e1c8fb7daa9c0bcd0c318886ca502f84f456c83bbc43",
    "size": 2329991,
-   "hosting": "link",
-   "prohibitedBy": "Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG)",
    "makerDownloads": [
     "https://www.microsoft.com/en-us/download/details.aspx?id=8109"
    ],
    "licence": "Proprietary (Microsoft XAudio2/XACT/X3DAudio, DirectX June 2010 runtime)",
+   "licenceNote": "Re-hosted by owner decision 2026-10-08 (\"for the microsoft stuff, we host it anyway\"): the terms say Microsoft DirectX End User Runtime licence terms, 2. SCOPE OF LICENSE: \"You may not ... publish the software for others to copy\" (text shipped in directx_Jun2010_redist.exe, dsetup32.dll resource SETUP_AGREEMENT_ENG). Taken down only on an actual takedown request (README.md, Takedown).",
    "path": "wincomponents/xaudio.tzst"
   },
   {

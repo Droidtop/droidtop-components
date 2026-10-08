@@ -29,9 +29,11 @@ To offer another file: add it to `sources/mirror.json` (group, name, from, sha25
 
 The scripts are GPL-3.0 (LICENSE; the Turnip feed labels follow DroidDeck's GPL-3.0
 `TurnipReleases.kt`). Each component keeps its own licence, named per file in `sources/mirror.json`.
-The rule: a file is re-hosted unless its terms explicitly forbid redistribution; such a file is
-link-only (`hosting: "link"`, `prohibitedBy` quotes the clause) and droidtop fetches it from its
-maker with the recorded SHA-256.
+The rule (owner, 2026-10-08): a file is re-hosted unless its terms explicitly forbid
+redistribution, and the Microsoft files and the font-bearing prefix template are re-hosted anyway
+by the owner's decision ("for the microsoft stuff, we host it anyway"); their entries keep the
+forbidding clause in `licenceNote`. A file is taken down (made link-only) only on an actual
+takedown request (below).
 
 | Files | Licence | Here |
 |---|---|---|
@@ -44,10 +46,10 @@ maker with the recorded SHA-256.
 | `container_files/extras` | 7-Zip (LGPL-2.1 + unRAR restriction), Steamless (CC BY-NC-ND 4.0), wine-mono | re-hosted unmodified, non-commercially |
 | `imagefs_*` | Termux-built packages (GPL, LGPL, MIT, BSD...) | re-hosted; recipes: termux/termux-packages |
 | Qualcomm Adreno drivers, Vortek | proprietary, no licence accompanies them | re-hosted (no clause forbids it) |
-| `wincomponents/direct3d, xaudio, directmusic, directplay` | Microsoft DirectX End User Runtime: "You may not ... publish the software for others to copy" | link only |
-| `wincomponents/directshow, directsound, wmdecoder` | Windows 7 system files: same clause (Windows 7 terms, 8) | link only |
-| `wincomponents/vcrun2010` | Visual C++ 2010 runtime terms, 2: same clause | link only |
-| `container_files/container_pattern_common_20260821` | Monotype and Microsoft fonts inside: "You may not copy or distribute this software."; "Any other use is prohibited." | link only |
+| `wincomponents/direct3d, xaudio, directmusic, directplay` | Microsoft DirectX End User Runtime: "You may not ... publish the software for others to copy" | re-hosted by owner decision (clause in `licenceNote`) |
+| `wincomponents/directshow, directsound, wmdecoder` | Windows 7 system files: same clause (Windows 7 terms, 8) | re-hosted by owner decision (clause in `licenceNote`) |
+| `wincomponents/vcrun2010` | Visual C++ 2010 runtime terms, 2: same clause | re-hosted by owner decision (clause in `licenceNote`) |
+| `container_files/container_pattern_common_20260821` | Monotype and Microsoft fonts inside: "You may not copy or distribute this software."; "Any other use is prohibited." | re-hosted by owner decision (clause in `licenceNote`) |
 
 ## Takedown
 
