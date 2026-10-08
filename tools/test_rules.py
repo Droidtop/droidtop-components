@@ -4,7 +4,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_catalog import canonical_name, runtime_ver_code, runtime_ver_name  # noqa: E402
+from build_catalog import add_flavour, asset_flavour, canonical_name, runtime_ver_code, runtime_ver_name  # noqa: E402
 
 CASES = [
     # (profile type, profile versionName, arch from the wine binary, installed name)
@@ -28,6 +28,15 @@ def main():
         if got != want:
             print(f'{typ} {ver} {arch}: got {got}, want {want}')
             bad += 1
+    for name, word, want in [('proton-11.0-7-arm64ec', 'ge', 'proton-11.0-7-ge-arm64ec'),
+                             ('proton-11.0-7-ge-arm64ec', 'wlc', 'proton-11.0-7-ge.wlc-arm64ec'),
+                             ('proton-10.0-arm64ec', 'wlc', 'proton-10.0-wlc-arm64ec')]:
+        if add_flavour(name, word) != want:
+            print(f'{name} + {word}: got {add_flavour(name, word)}, want {want}')
+            bad += 1
+    if asset_flavour('GE-proton-11.0-7-arm64ec.wcp') != 'ge' or asset_flavour('proton-11.0-2-x86_64.wcp') is not None:
+        print('asset_flavour')
+        bad += 1
     for code, want in [(0, 0), (1, 1), (9, 9), (10, 0), (-1, 0)]:
         if runtime_ver_code(code) != want:
             print(f'version code {code}: got {runtime_ver_code(code)}, want {want}')

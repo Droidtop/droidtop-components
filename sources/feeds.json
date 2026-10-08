@@ -64,6 +64,7 @@
   },
   {
    "id": "winlator-contents",
+   "tag": "wlc",
    "label": "winlator-contents (The412Banner)",
    "kind": "releases",
    "engine": "bionic",
@@ -77,6 +78,7 @@
   },
   {
    "id": "wcphub",
+   "tag": "wcphub",
    "label": "WinlatorWCPHub (Arihany)",
    "kind": "releases",
    "engine": "bionic",

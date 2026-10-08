@@ -21,7 +21,8 @@ To offer another file: add it to `sources/mirror.json` (group, name, from, licen
 `items` or `path` the runtime asks for). To follow another release feed: add it to
 `sources/feeds.json`.
 
-Licences: the scripts are MIT (LICENSE). Each component keeps its own licence, named per file
+Licences: the scripts are GPL-3.0 (LICENSE; the Turnip feed labels follow DroidDeck's
+GPL-3.0 `TurnipReleases.kt`). Each component keeps its own licence, named per file
 in `sources/mirror.json` and by its maker for feed items; sources for the LGPL builds are with
 their makers (Wine/Proton: github.com/GameNative/proton-wine and the feeds' repositories;
 VKD3D-Proton: github.com/HansKristian-Work/vkd3d-proton).

@@ -89,6 +89,71 @@ def runtime_ver_code(ver_code):
     return ver_code if 0 <= ver_code <= 9 else 0
 
 
+def flavour_of(name):
+    """The flavour word of a canonical name ("ge" in proton-11.0-7-ge-arm64ec), or None."""
+    mid = name.split('-')[:-1]
+    return mid[-1] if len(mid) >= 3 and not NUMBER.match(mid[-1]) else None
+
+
+def add_flavour(name, word):
+    """[name] with [word] added to its flavour: proton-11.0-7-arm64ec + ge = proton-11.0-7-ge-arm64ec."""
+    word = re.sub(r'[^a-z0-9.]', '', word.lower())
+    if not word:
+        return name
+    if not word[0].isalpha():
+        word = 'r' + word
+    parts = name.split('-')
+    mid, arch = parts[:-1], parts[-1]
+    if flavour_of(name):
+        mid[-1] = f'{mid[-1]}.{word}'
+    else:
+        mid.append(word)
+    return '-'.join(mid + [arch])
+
+
+def asset_flavour(asset_name):
+    """Words an asset's file name puts before Wine/Proton ("GE-proton-11.0-7-arm64ec.wcp": ge)."""
+    toks = [t for t in re.split(r'[-\s_]+', asset_name.lower()) if t]
+    i = next((i for i, t in enumerate(toks) if t.startswith('proton') or t.startswith('wine')), 0)
+    return '.'.join(toks[:i]) or None
+
+
+def unique_wine_names(items, feeds):
+    """Wine and Proton builds share one store, keyed by name: a later source's build named like
+    an earlier one gets its source's tag as a flavour (droidtop applies the catalog's name)."""
+    tags = {f['id']: f.get('tag', f['id']) for f in feeds}
+    seen = set()
+    for typ in ('proton', 'wine'):
+        kept = []
+        for e in items.get(typ, []):
+            if e['engine'] != 'bionic':
+                kept.append(e)
+                continue
+            name, code = e['id'].rsplit('-', 1)
+            if name in seen and e['source'] != 'mirror':
+                name = add_flavour(name, tags.get(e['source'], e['source']))
+                e['id'], e['name'] = f'{name}-{code}', name
+            if name in seen:
+                print(f'dropped {e["source"]} {e["id"]}: name taken')
+                continue
+            seen.add(name)
+            kept.append(e)
+        if typ in items:
+            items[typ] = kept
+
+
+def unique_ids(items):
+    """An id already offered (a driver's meta.json name, a package's version) is the same install."""
+    for typ, lst in items.items():
+        seen, kept = set(), []
+        for e in lst:
+            if e['engine'] == 'bionic' and e['id'].lower() in seen:
+                continue
+            seen.add(e['id'].lower())
+            kept.append(e)
+        items[typ] = kept
+
+
 # ---- ELF ------------------------------------------------------------------------------------
 
 def elf_info(head):
@@ -308,6 +373,8 @@ def feed_items(feed, items, cache, work):
                     ver = canonical_name(runtime_ver_name(probe['type'], probe['versionName']), arch)
                     if ver is None:
                         continue
+                    if not flavour_of(ver) and asset_flavour(name):
+                        ver = add_flavour(ver, asset_flavour(name))
                     ident = f'{ver}-{runtime_ver_code(code)}'
                     items.setdefault(typ, []).append(dict(base, id=ident, name=ver, arch=ver.rsplit('-', 1)[1],
                                                           engine=engine_of(elf.get('interp'))))
@@ -333,6 +400,8 @@ def main():
     for feed in feeds:
         if feed.get('format'):
             feed_items(feed, items, cache, work)
+    unique_wine_names(items, feeds)
+    unique_ids(items)
     catalog = {
         'format': 1,
         # ManifestData's own fields, so the runtime reads the catalog with the same model.
