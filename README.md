@@ -33,7 +33,11 @@ The rule (owner, 2026-10-08): a file is re-hosted unless its terms explicitly fo
 redistribution, and the Microsoft files and the font-bearing prefix template are re-hosted anyway
 by the owner's decision ("for the microsoft stuff, we host it anyway"); their entries keep the
 forbidding clause in `licenceNote`. A file is taken down (made link-only) only on an actual
-takedown request (below).
+takedown request (below). Confirmed by the owner on 2026-10-08 for exactly the proprietary rows in the
+table below (Adreno drivers, Vortek, the Microsoft DirectX, Windows 7 and VC++ files, the fonts in the
+container pattern): "if it is not explicitly prohibited, then we continue hosting it. If we get a C&D, then
+we take them down"; for the Microsoft files: "we host it anyway. The terms have been unenforced for long
+enough that I'm certain they're unenforceable".
 
 | Files | Licence | Here |
 |---|---|---|
