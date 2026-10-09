@@ -94,7 +94,7 @@ echo "== innoextract"
 cmake -S innoextract -B innoextract/build "${CMAKE_COMMON[@]}" \
   -DCMAKE_PREFIX_PATH="$PREFIX" -DBOOST_ROOT="$PREFIX" -DBoost_NO_SYSTEM_PATHS=ON -DBoost_USE_STATIC_LIBS=ON \
   -DBoost_INCLUDE_DIR="$PREFIX/include" -DBoost_LIBRARY_DIR="$PREFIX/lib" \
-  -DLZMA_INCLUDE_DIR="$PREFIX/include" -DLZMA_LIBRARY="$PREFIX/lib/liblzma.a" \
+  -DBZIP2_INCLUDE_DIR="$PREFIX/include" -DBZIP2_LIBRARIES="$PREFIX/lib/libbz2.a" -DBZIP2_LIBRARY_RELEASE="$PREFIX/lib/libbz2.a" \n  -DLZMA_INCLUDE_DIR="$PREFIX/include" -DLZMA_LIBRARY="$PREFIX/lib/liblzma.a" \
   -DUSE_LTO=OFF -DUSE_STATIC_LIBS=ON -DSET_WARNING_FLAGS=OFF -DCMAKE_EXE_LINKER_FLAGS="-static-libstdc++"
 cmake --build innoextract/build -j"$JOBS"
 
