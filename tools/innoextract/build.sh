@@ -11,7 +11,7 @@ set -euo pipefail
 ABI="${1:?abi: arm64-v8a or x86_64}"
 OUT="$(realpath -m "${2:?output dir}")"
 NDK="${ANDROID_NDK_HOME:-${ANDROID_NDK_LATEST_HOME:?no NDK}}"
-API=24
+API=28 # iconv (innoextract converts installer text with it) is declared from API 28; Android 9 is the oldest device droidtop runs on
 
 INNOEXTRACT_VERSION=1.9
 INNOEXTRACT_URL="https://github.com/dscharrer/innoextract/releases/download/1.9/innoextract-1.9.tar.gz"
