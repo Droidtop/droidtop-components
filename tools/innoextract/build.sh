@@ -96,7 +96,7 @@ cmake -S innoextract -B innoextract/build "${CMAKE_COMMON[@]}" \
   -DBoost_INCLUDE_DIR="$PREFIX/include" -DBoost_LIBRARY_DIR="$PREFIX/lib" \
   -DBZIP2_INCLUDE_DIR="$PREFIX/include" -DBZIP2_LIBRARIES="$PREFIX/lib/libbz2.a" -DBZIP2_LIBRARY_RELEASE="$PREFIX/lib/libbz2.a" \
   -DLZMA_INCLUDE_DIR="$PREFIX/include" -DLZMA_LIBRARY="$PREFIX/lib/liblzma.a" \
-  -DUSE_LTO=OFF -DUSE_STATIC_LIBS=ON -DSET_WARNING_FLAGS=OFF -DCMAKE_EXE_LINKER_FLAGS="-static-libstdc++"
+  -DUSE_LTO=OFF -DUSE_STATIC_LIBS=ON -DSET_WARNING_FLAGS=OFF -DCMAKE_EXE_LINKER_FLAGS="-static-libstdc++ -fuse-ld=lld"
 cmake --build innoextract/build -j"$JOBS"
 
 BIN="innoextract/build/innoextract"
