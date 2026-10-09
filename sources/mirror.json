@@ -3313,6 +3313,38 @@
      "variant": "bionic"
     }
    ]
+  },
+  {
+   "group": "tools",
+   "name": "innoextract-1.9-arm64-v8a",
+   "from": "https://github.com/Droidtop/droidtop-components/releases/download/tools/innoextract-1.9-arm64-v8a",
+   "sha256": "e6cf692c8816118d93ba47d0d6c08ea6ff8211c643ff062ed2e228077e215ee0",
+   "size": 1406800,
+   "licence": "zlib (innoextract 1.9), statically linking Boost 1.84 (BSL-1.0), xz 5.8.1 (0BSD), zlib 1.3.1 (zlib) and bzip2 1.0.8 (bzip2 licence, BSD-style)",
+   "licenceUrl": "https://github.com/dscharrer/innoextract/blob/1.9/LICENSE",
+   "source": {
+    "repo": "dscharrer/innoextract",
+    "ref": "1.9",
+    "exact": true,
+    "note": "built unchanged by tools/innoextract/build.sh in this repository"
+   },
+   "path": "tools/innoextract-1.9-arm64-v8a"
+  },
+  {
+   "group": "tools",
+   "name": "innoextract-1.9-x86_64",
+   "from": "https://github.com/Droidtop/droidtop-components/releases/download/tools/innoextract-1.9-x86_64",
+   "sha256": "0b23bd512a6fbbef6a709c97c20f7b8d034761fc4186b18f02c201b9b2a77b71",
+   "size": 1382064,
+   "licence": "zlib (innoextract 1.9), statically linking Boost 1.84 (BSL-1.0), xz 5.8.1 (0BSD), zlib 1.3.1 (zlib) and bzip2 1.0.8 (bzip2 licence, BSD-style)",
+   "licenceUrl": "https://github.com/dscharrer/innoextract/blob/1.9/LICENSE",
+   "source": {
+    "repo": "dscharrer/innoextract",
+    "ref": "1.9",
+    "exact": true,
+    "note": "built unchanged by tools/innoextract/build.sh in this repository"
+   },
+   "path": "tools/innoextract-1.9-x86_64"
   }
  ]
 }
