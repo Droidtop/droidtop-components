@@ -1,0 +1,61 @@
+# Builds innoextract (https://constexpr.org/innoextract/) from its upstream source release for
+# arm64-v8a and x86_64, with Boost, xz and bzip2 built from their upstream releases and linked in
+# statically (tools/innoextract/build.sh). droidtop fetches the binary from the catalog on first use
+# and runs it through Android's linker64, as it runs Wine; it unpacks a Windows installer without
+# running it. The build is published as assets of the "tools" release; sources/mirror.json lists
+# them, so the catalog carries their SHA-256.
+name: Build innoextract
+
+on:
+  push:
+    branches: [main, 'ci/**']
+    paths:
+      - tools/innoextract/**
+      - .github/workflows/innoextract.yml
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Upload the builds to the "tools" release
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        abi: [arm64-v8a, x86_64]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: bash tools/innoextract/build.sh "${{ matrix.abi }}" out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: innoextract-${{ matrix.abi }}
+          path: out/*
+
+  publish:
+    needs: build
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+          merge-multiple: true
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view tools -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 ||
+            gh release create tools -R "$GITHUB_REPOSITORY" --latest=false --title "Tools built by droidtop" \
+              --notes "Programs droidtop builds from upstream source (tools/*/build.sh, listed in sources/mirror.json with their licences)."
+          gh release upload tools out/* -R "$GITHUB_REPOSITORY"
+          (cd out && sha256sum *)
