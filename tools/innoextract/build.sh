@@ -21,6 +21,8 @@ BOOST_URL="https://github.com/boostorg/boost/releases/download/boost-1.84.0/boos
 BOOST_SHA256=2e64e5d79a738d0fa6fb546c6e5c2bd28f88d268a2a080546f74e5ff98f29d0e
 XZ_URL="https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz"
 XZ_SHA256=0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e
+ZLIB_URL="https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz"
+ZLIB_SHA256=9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23
 BZIP2_URL="https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
 BZIP2_SHA256=ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269
 
@@ -51,16 +53,25 @@ fetch "$INNOEXTRACT_URL" "$INNOEXTRACT_SHA256" innoextract.tar.gz
 fetch "$BOOST_URL" "$BOOST_SHA256" boost.tar.xz
 fetch "$XZ_URL" "$XZ_SHA256" xz.tar.xz
 fetch "$BZIP2_URL" "$BZIP2_SHA256" bzip2.tar.gz
-mkdir innoextract boost xz bzip2
+fetch "$ZLIB_URL" "$ZLIB_SHA256" zlib.tar.gz
+mkdir innoextract boost xz bzip2 zlib
 tar -xzf innoextract.tar.gz -C innoextract --strip-components=1
 tar -xJf boost.tar.xz -C boost --strip-components=1
 tar -xJf xz.tar.xz -C xz --strip-components=1
 tar -xzf bzip2.tar.gz -C bzip2 --strip-components=1
+tar -xzf zlib.tar.gz -C zlib --strip-components=1
 
 TOOLCHAIN_FILE="$NDK/build/cmake/android.toolchain.cmake"
 CMAKE_COMMON=(-G Ninja -DCMAKE_TOOLCHAIN_FILE="$TOOLCHAIN_FILE" -DANDROID_ABI="$ABI" -DANDROID_PLATFORM="android-$API"
   -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$PREFIX" -DCMAKE_POSITION_INDEPENDENT_CODE=ON
   -DCMAKE_POLICY_VERSION_MINIMUM=3.5)
+
+echo "== zlib"
+# Our own, not the NDK's libz.a: that archive is LTO bitcode, which not every linker reads.
+cmake -S zlib -B zlib/build "${CMAKE_COMMON[@]}" -DZLIB_BUILD_EXAMPLES=OFF
+cmake --build zlib/build -j"$JOBS"
+cmake --install zlib/build
+rm -f "$PREFIX"/lib/libz.so*
 
 echo "== bzip2"
 ( cd bzip2
@@ -86,6 +97,7 @@ JAM
     toolset=clang-android target-os=android architecture="$B2_ARCH" address-model=64 abi=$([ "$ABI" = arm64-v8a ] && echo aapcs || echo sysv) binary-format=elf \
     link=static runtime-link=shared threading=multi variant=release cxxflags=-std=c++14 \
     -sBZIP2_INCLUDE="$PREFIX/include" -sBZIP2_LIBPATH="$PREFIX/lib" -sBZIP2_BINARY=bz2 \
+    -sZLIB_INCLUDE="$PREFIX/include" -sZLIB_LIBPATH="$PREFIX/lib" -sZLIB_BINARY=z \
     -sNO_LZMA=1 -sNO_ZSTD=1 \
     --with-iostreams --with-filesystem --with-program_options --with-date_time --with-system \
     install )
@@ -94,6 +106,7 @@ echo "== innoextract"
 cmake -S innoextract -B innoextract/build "${CMAKE_COMMON[@]}" \
   -DCMAKE_PREFIX_PATH="$PREFIX" -DBOOST_ROOT="$PREFIX" -DBoost_NO_SYSTEM_PATHS=ON -DBoost_USE_STATIC_LIBS=ON \
   -DBoost_INCLUDE_DIR="$PREFIX/include" -DBoost_LIBRARY_DIR="$PREFIX/lib" \
+  -DZLIB_INCLUDE_DIR="$PREFIX/include" -DZLIB_LIBRARY="$PREFIX/lib/libz.a" \
   -DBZIP2_INCLUDE_DIR="$PREFIX/include" -DBZIP2_LIBRARIES="$PREFIX/lib/libbz2.a" -DBZIP2_LIBRARY_RELEASE="$PREFIX/lib/libbz2.a" \
   -DLZMA_INCLUDE_DIR="$PREFIX/include" -DLZMA_LIBRARY="$PREFIX/lib/liblzma.a" \
   -DUSE_LTO=OFF -DUSE_STATIC_LIBS=ON -DSET_WARNING_FLAGS=OFF -DCMAKE_EXE_LINKER_FLAGS="-static-libstdc++ -fuse-ld=lld"
