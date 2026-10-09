@@ -41,6 +41,7 @@ GROUP_TITLES = {
     'box64': 'Box64 and WowBox64 builds',
     'fexcore': 'FEXCore builds',
     'wine': 'Wine and Proton builds',
+    'tools': 'Tools built by droidtop from upstream source',
 }
 
 

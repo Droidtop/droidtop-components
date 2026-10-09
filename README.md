@@ -2,8 +2,10 @@
 
 The Windows-runtime components [droidtop](https://github.com/Droidtop/droidtop) downloads on
 demand: Wine and Proton builds, DXVK, VKD3D-Proton, FEXCore, Box64 and WowBox64, Adreno driver
-builds (Turnip and others), and the runtime's base system. Nothing here is built or changed:
-every file is either re-hosted unmodified or linked where its maker publishes it.
+builds (Turnip and others), the runtime's base system and the tools it runs (innoextract). This repository
+mirrors upstream files, and builds from upstream source where no usable build exists (the owner,
+2026-10-08: "We can ALSO build our own when it behooves us"): every file is either re-hosted unmodified,
+linked where its maker publishes it, or built here, unchanged, from its maker's source release.
 
 - `sources/mirror.json`: the files this repository offers, each with where it came from (`from`,
   plus `official`: other places its maker publishes the same bytes), its SHA-256, its licence and,
@@ -20,6 +22,13 @@ every file is either re-hosted unmodified or linked where its maker publishes it
   accepts only bytes with that SHA-256. The catalog is attested with a Sigstore build provenance
   (`gh attestation verify catalog.json -R Droidtop/droidtop-components`) and, once the signing
   secrets exist, signed (below).
+
+- `tools/<name>/build.sh` and `.github/workflows/<name>.yml`: a build from upstream source, for what no maker
+  publishes in a usable form. Today: `tools/innoextract` builds innoextract 1.9 (zlib licence; Boost 1.84, xz
+  5.8.1, zlib 1.3.1 and bzip2 1.0.8 from their own releases, each checked against a pinned SHA-256) for
+  arm64-v8a and x86_64 as one position-independent executable that Android's linker64 can start; no source is
+  patched. A manual run of the workflow on `main` with `publish` uploads the builds to the `tools` release,
+  where `sources/mirror.json` lists them like any mirrored file.
 
 To offer another file: add it to `sources/mirror.json` (group, name, from, sha256, licence, and the
 `items` or `path` the runtime asks for). To follow another release feed: add it to

@@ -8,7 +8,7 @@ name: Build innoextract
 
 on:
   push:
-    branches: [main, 'ci/**']
+    branches: [main]
     paths:
       - tools/innoextract/**
       - .github/workflows/innoextract.yml
