@@ -51,7 +51,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Tools
-        run: sudo apt-get install -y --no-install-recommends zstd xz-utils python3-cryptography
+        run: sudo apt-get install -y --no-install-recommends zstd xz-utils
+      - name: Signing tools
+        # The apt copy of cryptography is too old to parse these leaf certificates.
+        run: python3 -m pip install --user --break-system-packages 'cryptography>=42'
       - name: Build the catalog
         env:
           GH_TOKEN: ${{ github.token }}
