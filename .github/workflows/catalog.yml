@@ -2,7 +2,7 @@
 # catalog.json from the mirror and the release feeds in sources/feeds.json
 # (tools/build_catalog.py), signs it when the CATALOG_SIGNING_KEY and CATALOG_SIGNING_CERT
 # secrets exist (tools/sign_jws.sh writes catalog.json.jws, a detached JWS whose x5c leaf was issued
-# by Droidtop Core; droidtop refuses the catalog without it), attests it
+# by the droidtop root; droidtop refuses the catalog without it), attests it
 # (a Sigstore-signed build provenance) and publishes it on the "catalog" release, where droidtop
 # reads it:
 #   https://github.com/Droidtop/droidtop-components/releases/download/catalog/catalog.json
@@ -68,7 +68,7 @@ jobs:
         run: |
           if [ -n "$CATALOG_SIGNING_KEY" ] && [ -n "$CATALOG_SIGNING_CERT" ]; then
             bash tools/sign_jws.sh droidtop-catalog+jws out/catalog.json out/catalog.json.jws
-            python3 tools/verify_jws.py droidtop-catalog+jws out/catalog.json out/catalog.json.jws               tools/droidtop-core.pub urn:droidtop:catalog:Droidtop/droidtop-components
+            python3 tools/verify_jws.py droidtop-catalog+jws out/catalog.json out/catalog.json.jws               tools/droidtop-root.pub urn:droidtop:catalog:Droidtop/droidtop-components
           else
             echo "No CATALOG_SIGNING_KEY/CATALOG_SIGNING_CERT secrets: catalog published unsigned."
           fi

@@ -75,10 +75,10 @@ with the same SHA-256, so droidtop keeps installing the identical file from its 
 ## Catalog signature
 
 When the repository secrets `CATALOG_SIGNING_KEY` (a PEM P-256 private key) and
-`CATALOG_SIGNING_CERT` (its certificate, issued by Droidtop Core) exist, the workflow writes
+`CATALOG_SIGNING_CERT` (its certificate, issued by the droidtop root) exist, the workflow writes
 `catalog.json.jws` to the `catalog` release: a detached JWS (ES256, `typ` `droidtop-catalog+jws`,
 the leaf in `x5c`) over the exact bytes of `catalog.json`. The leaf names
 `urn:droidtop:catalog:Droidtop/droidtop-components`. `tools/sign_jws.sh` signs and
-`tools/verify_jws.py` checks it against Droidtop Core's public key (`tools/droidtop-core.pub`)
-before anything is published. droidtop pins Core and refuses the catalog without a valid signature.
+`tools/verify_jws.py` checks it against the droidtop root's public key (`tools/droidtop-root.pub`)
+before anything is published. droidtop pins the droidtop root and refuses the catalog without a valid signature.
 Expiry dates are not checked.

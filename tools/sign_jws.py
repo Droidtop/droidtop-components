@@ -22,4 +22,10 @@ if alg == "ES256":
     signature = r.to_bytes(32, "big") + s.to_bytes(32, "big")
 else:
     signature = key.sign(signing_input, padding.PKCS1v15(), hashes.SHA256())
+# Check our own signature against the leaf's public key before anything is packaged.
+if alg == "ES256":
+    chain[0].public_key().verify(utils.encode_dss_signature(int.from_bytes(signature[:32], "big"), int.from_bytes(signature[32:], "big")),
+                                 signing_input, ec.ECDSA(hashes.SHA256()))
+else:
+    chain[0].public_key().verify(signature, signing_input, padding.PKCS1v15(), hashes.SHA256())
 sys.stdout.write((header + b".." + b64u(signature)).decode())

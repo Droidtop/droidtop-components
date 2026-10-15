@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Verifies a detached droidtop JWS (see sign_jws.py) against Droidtop Core's public key.
-Usage: verify_jws.py <typ> <content file> <jws file> <core.pub> [required SAN URN ...]
+"""Verifies a detached droidtop JWS (see sign_jws.py) against a root public key (droidtop root for official, gamegrab root for gamegrab).
+Usage: verify_jws.py <typ> <content file> <jws file> <root.pub> [required SAN URN ...]
 Checks: ES256 over the exact content bytes with the x5c leaf's key; the leaf is signed by Core's key
-(sha256WithRSA), CA:FALSE, digitalSignature, carries the EKU for the typ, and names each given URN.
+(ECDSA or RSA), CA:FALSE, digitalSignature, carries the EKU for the typ, and names each given URN.
 Expiry is not checked (droidtop ignores it). Exits non-zero on any failure."""
 import base64, sys
 from cryptography import x509
@@ -25,7 +25,10 @@ def verify(typ, content, jws, core_pem, urns=()):
         raise ValueError("bad header %r" % header)
     leaf = x509.load_der_x509_certificate(base64.b64decode(header["x5c"][0]))
     core = serialization.load_pem_public_key(core_pem)
-    core.verify(leaf.signature, leaf.tbs_certificate_bytes, padding.PKCS1v15(), leaf.signature_hash_algorithm)
+    if isinstance(core, ec.EllipticCurvePublicKey):
+        core.verify(leaf.signature, leaf.tbs_certificate_bytes, ec.ECDSA(leaf.signature_hash_algorithm))
+    else:
+        core.verify(leaf.signature, leaf.tbs_certificate_bytes, padding.PKCS1v15(), leaf.signature_hash_algorithm)
     bc = leaf.extensions.get_extension_for_class(x509.BasicConstraints).value
     ku = leaf.extensions.get_extension_for_class(x509.KeyUsage).value
     eku = [o.dotted_string for o in leaf.extensions.get_extension_for_class(x509.ExtendedKeyUsage).value]
