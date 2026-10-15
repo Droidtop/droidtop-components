@@ -448,10 +448,9 @@ def main():
         'files': files,
     }
     if os.environ.get('CATALOG_SIGNED') == 'true':
-        # Written by tools/sign_catalog.sh beside the catalog on the same release. droidtop does not
-        # rely on this field: once it pins a master key it fetches both files whether named or not.
-        catalog['signature'] = {'file': 'catalog.json.sig', 'certificate': 'catalog.cert',
-                                'algorithm': 'ECDSA-P256-SHA256'}
+        # Written by tools/sign_jws.sh beside the catalog on the same release. droidtop does not
+        # rely on this field: it fetches catalog.json.jws whether named or not.
+        catalog['signature'] = {'file': 'catalog.json.jws', 'algorithm': 'ES256'}
     with open(os.path.join(out, 'catalog.json'), 'w') as f:
         json.dump(catalog, f, indent=1, sort_keys=False)
         f.write('\n')

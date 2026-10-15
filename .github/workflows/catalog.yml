@@ -1,7 +1,8 @@
 # Mirror and catalog: re-hosts the files in sources/mirror.json (tools/mirror.py), then writes
 # catalog.json from the mirror and the release feeds in sources/feeds.json
 # (tools/build_catalog.py), signs it when the CATALOG_SIGNING_KEY and CATALOG_SIGNING_CERT
-# secrets exist (tools/sign_catalog.sh; droidtop checks it once it pins a master key), attests it
+# secrets exist (tools/sign_jws.sh writes catalog.json.jws, a detached JWS whose x5c leaf was issued
+# by Droidtop Core; droidtop refuses the catalog without it), attests it
 # (a Sigstore-signed build provenance) and publishes it on the "catalog" release, where droidtop
 # reads it:
 #   https://github.com/Droidtop/droidtop-components/releases/download/catalog/catalog.json
@@ -50,7 +51,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Tools
-        run: sudo apt-get install -y --no-install-recommends zstd xz-utils
+        run: sudo apt-get install -y --no-install-recommends zstd xz-utils python3-cryptography
       - name: Build the catalog
         env:
           GH_TOKEN: ${{ github.token }}
@@ -63,7 +64,8 @@ jobs:
           CATALOG_SIGNING_CERT: ${{ secrets.CATALOG_SIGNING_CERT }}
         run: |
           if [ -n "$CATALOG_SIGNING_KEY" ] && [ -n "$CATALOG_SIGNING_CERT" ]; then
-            bash tools/sign_catalog.sh out
+            bash tools/sign_jws.sh droidtop-catalog+jws out/catalog.json out/catalog.json.jws
+            python3 tools/verify_jws.py droidtop-catalog+jws out/catalog.json out/catalog.json.jws               tools/droidtop-core.pub urn:droidtop:catalog:Droidtop/droidtop-components
           else
             echo "No CATALOG_SIGNING_KEY/CATALOG_SIGNING_CERT secrets: catalog published unsigned."
           fi
@@ -79,13 +81,15 @@ jobs:
             gh release create catalog -R "$GITHUB_REPOSITORY" --latest=false \
               --title "Component catalog" \
               --notes "catalog.json: every component droidtop can offer, with its SHA-256. Rewritten by every run of the Mirror and catalog workflow."
-          if [ -f out/catalog.json.sig ]; then
+          if [ -f out/catalog.json.jws ]; then
             # Signature first: a reader between the two uploads sees a new signature over the old
             # catalog, refuses it, and keeps its own copy until its next fetch.
-            gh release upload catalog out/catalog.json.sig out/catalog.cert -R "$GITHUB_REPOSITORY" --clobber
+            gh release upload catalog out/catalog.json.jws -R "$GITHUB_REPOSITORY" --clobber
           else
-            for stale in catalog.json.sig catalog.cert; do
-              gh release delete-asset catalog "$stale" -R "$GITHUB_REPOSITORY" -y 2>/dev/null || true
-            done
+            gh release delete-asset catalog catalog.json.jws -R "$GITHUB_REPOSITORY" -y 2>/dev/null || true
           fi
+          # Retired by the certificate-format signature.
+          for stale in catalog.json.sig catalog.cert; do
+            gh release delete-asset catalog "$stale" -R "$GITHUB_REPOSITORY" -y 2>/dev/null || true
+          done
           gh release upload catalog out/catalog.json out/probe-cache.json -R "$GITHUB_REPOSITORY" --clobber
