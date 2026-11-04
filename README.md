@@ -30,6 +30,13 @@ linked where its maker publishes it, or built here, unchanged, from its maker's 
   patched. A manual run of the workflow on `main` with `publish` uploads the builds to the `tools` release,
   where `sources/mirror.json` lists them like any mirrored file.
 
+- The `windows-runtime` release: the files droidtop builds into its APK for the Windows runtime and has no
+  source to build from in its own CI (Droidtop/tracker#857): GameNative's bundled Box64, FEXCore and WowBox64
+  builds, its Wine input DLL sets, and the binaries that have no source anywhere (`redirect.tzst`,
+  `libredirect-bionic-wx*.so`, `libvortekrenderer.so`, `libkgslshim.so`). Re-hosted unmodified, `from`
+  utkarshdalal/GameNative at `ce378f01`, which carries the identical bytes. droidtop's build fetches them by
+  `path` against its own pin list (`runtime-windows/components.pin` there), so a file here is never replaced.
+
 To offer another file: add it to `sources/mirror.json` (group, name, from, sha256, licence, and the
 `items` or `path` the runtime asks for). To follow another release feed: add it to
 `sources/feeds.json`. `tools/test_rules.py` checks that every file has a SHA-256 and a licence.
@@ -59,6 +66,8 @@ enough that I'm certain they're unenforceable".
 | `container_files/extras` | 7-Zip (LGPL-2.1 + unRAR restriction), Steamless (CC BY-NC-ND 4.0), wine-mono | re-hosted unmodified, non-commercially |
 | `imagefs_*` | Termux-built packages (GPL, LGPL, MIT, BSD...) | re-hosted; recipes: termux/termux-packages |
 | Qualcomm Adreno drivers, Vortek | proprietary, no licence accompanies them | re-hosted (no clause forbids it) |
+| `windows-runtime`: `redirect.tzst`, `libredirect-bionic-wx*.so`, `libvortekrenderer.so`, `libkgslshim.so` | proprietary, no licence and no source published | re-hosted (no clause forbids it) |
+| `windows-runtime`: `*_input_dlls.tzst` | LGPL-2.1-or-later (Wine builtin DLLs) | re-hosted; source: GameNative/proton-wine (branch only, no commit named) |
 | `wincomponents/direct3d, xaudio, directmusic, directplay` | Microsoft DirectX End User Runtime: "You may not ... publish the software for others to copy" | re-hosted by owner decision (clause in `licenceNote`) |
 | `wincomponents/directshow, directsound, wmdecoder` | Windows 7 system files: same clause (Windows 7 terms, 8) | re-hosted by owner decision (clause in `licenceNote`) |
 | `wincomponents/vcrun2010` | Visual C++ 2010 runtime terms, 2: same clause | re-hosted by owner decision (clause in `licenceNote`) |

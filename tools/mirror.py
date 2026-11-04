@@ -42,6 +42,7 @@ GROUP_TITLES = {
     'fexcore': 'FEXCore builds',
     'wine': 'Wine and Proton builds',
     'tools': 'Tools built by droidtop from upstream source',
+    'windows-runtime': 'Windows runtime files built into droidtop',
 }
 
 

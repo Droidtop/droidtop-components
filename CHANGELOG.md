@@ -14,6 +14,9 @@ the catalog it publishes.
 
 - The mirror and catalog for droidtop's Windows-runtime components (2026-10-08).
 - A commit-hygiene check, called from the shared workflow in `Droidtop/droidtop-platforms`.
+- The `windows-runtime` release: the Box64, FEXCore and WowBox64 builds, Wine input DLLs and sourceless
+  binaries droidtop builds into its APK, re-hosted from upstream GameNative so droidtop no longer reads
+  them from its old GameNative fork (Droidtop/tracker#857, 2026-11-04).
 
 ### Changed
 

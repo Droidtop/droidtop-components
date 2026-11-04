@@ -3345,6 +3345,308 @@
     "note": "built unchanged by tools/innoextract/build.sh in this repository"
    },
    "path": "tools/innoextract-1.9-x86_64"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.3.2-bionic.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.3.2-bionic.tzst",
+   "sha256": "a93c1cd4a050a1688ef248f2a642b2ec9265b58ce85e9cc53417c6fd68ab7998",
+   "size": 2961195,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.3.2-bionic.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.3.4.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.3.4.tzst",
+   "sha256": "a60addf559d2284da1007c55894dd793aaf498316450ef9a568fbbe1b6f5e13c",
+   "size": 4008431,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.3.4.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.3.6-bionic.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.3.6-bionic.tzst",
+   "sha256": "3ba2cb63473b3a659f362d21bc4fa4eb74b77bc7df15c2b13e3866dd10fbc513",
+   "size": 3123675,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.3.6-bionic.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.3.6.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.3.6.tzst",
+   "sha256": "6daf984e45f399abeb7b37a3b0252bd0882760c6923613b39ea20ccead7a4528",
+   "size": 4591893,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.3.6.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.3.7-bionic.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.3.7-bionic.tzst",
+   "sha256": "ce95d5b352eaceaa31143bebf453c838ff49be4c7ee7ecb51c15af593af7862f",
+   "size": 2971992,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.3.7-bionic.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.3.8-bionic.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.3.8-bionic.tzst",
+   "sha256": "e254bff766fa61c5a8c5c4550a3a03529e64f689e02429292ce70d6b26c4460a",
+   "size": 3646823,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.3.8-bionic.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.3.8.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.3.8.tzst",
+   "sha256": "aeee651f759abcffd79d8ddbcfd1df15bfd5e4a2f45cbd94d71e64acede6d763",
+   "size": 4234635,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.3.8.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.4.0-bionic.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.4.0-bionic.tzst",
+   "sha256": "6c8fbe61b322f06d8a7c4cac538cd24bf8930202af94e61d40e0982c53aa3d51",
+   "size": 4179699,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.4.0-bionic.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "box64-0.4.2-bionic.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/box86_64/box64-0.4.2-bionic.tzst",
+   "sha256": "fcd10730ff899bad829a5e91780d8aae6350a7e152069ff2c90e93922ecad192",
+   "size": 3519079,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/box64-0.4.2-bionic.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "fexcore-2507.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/fexcore/fexcore-2507.tzst",
+   "sha256": "fd3319aede179f5e71545805426a22b39a4c2db208752a1afc8f892589aa3443",
+   "size": 1467636,
+   "licence": "MIT (FEX, built by GameNative from FEX-Emu/FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
+   "path": "windows-runtime/fexcore-2507.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "fexcore-2508.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/fexcore/fexcore-2508.tzst",
+   "sha256": "49bbd4effd80a7150182970974fc93e56772b3d8ee1467050fc9767a1c25015f",
+   "size": 3143123,
+   "licence": "MIT (FEX, built by GameNative from FEX-Emu/FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
+   "path": "windows-runtime/fexcore-2508.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "fexcore-2511.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/fexcore/fexcore-2511.tzst",
+   "sha256": "9ee55e7d6570146db1d987bbabab47adb875297fe6c7780fdd87a6e9ed710965",
+   "size": 3444135,
+   "licence": "MIT (FEX, built by GameNative from FEX-Emu/FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
+   "path": "windows-runtime/fexcore-2511.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "fexcore-2512.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/fexcore/fexcore-2512.tzst",
+   "sha256": "171466bb8eef6b494222b12037ac36e9a5c1778965113e3628aa76c9a57787d6",
+   "size": 3468615,
+   "licence": "MIT (FEX, built by GameNative from FEX-Emu/FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
+   "path": "windows-runtime/fexcore-2512.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "fexcore-2601.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/fexcore/fexcore-2601.tzst",
+   "sha256": "418a30180d7272e18e4205143c05c4a968c79f7860f30ce637fca51f1c6db7d8",
+   "size": 3483343,
+   "licence": "MIT (FEX, built by GameNative from FEX-Emu/FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
+   "path": "windows-runtime/fexcore-2601.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "fexcore-2603.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/fexcore/fexcore-2603.tzst",
+   "sha256": "852dadddcfa6e76ed1feaeb2ab0aec4bb2b867c087a2606929ff6a430e0febce",
+   "size": 1532911,
+   "licence": "MIT (FEX, built by GameNative from FEX-Emu/FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
+   "path": "windows-runtime/fexcore-2603.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "fexcore-2604.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/fexcore/fexcore-2604.tzst",
+   "sha256": "19dd444fe3f58ad1738a8202711624970ab0706b60c7a92cb3f856219e065446",
+   "size": 1549507,
+   "licence": "MIT (FEX, built by GameNative from FEX-Emu/FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
+   "path": "windows-runtime/fexcore-2604.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "fexcore-2605.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/fexcore/fexcore-2605.tzst",
+   "sha256": "2de0a0502190bfc96e62f1f9a252dec9cd81b59c3fbda763dfc5bea812afd437",
+   "size": 1544380,
+   "licence": "MIT (FEX, built by GameNative from FEX-Emu/FEX)",
+   "licenceUrl": "https://github.com/FEX-Emu/FEX/blob/main/LICENSE",
+   "path": "windows-runtime/fexcore-2605.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "wowbox64-0.3.4.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/wowbox64/wowbox64-0.3.4.tzst",
+   "sha256": "04a2db96f28fdc1b32715776a58220b5e2e128fb9cc12774bf3e217c52835f16",
+   "size": 1056369,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/wowbox64-0.3.4.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "wowbox64-0.3.6.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/wowbox64/wowbox64-0.3.6.tzst",
+   "sha256": "543c0f9f5dca14d962364465024fd43ffec54f364d7d9ab7154bc275d800063f",
+   "size": 1031045,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/wowbox64-0.3.6.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "wowbox64-0.3.7.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/wowbox64/wowbox64-0.3.7.tzst",
+   "sha256": "543c0f9f5dca14d962364465024fd43ffec54f364d7d9ab7154bc275d800063f",
+   "size": 1031045,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/wowbox64-0.3.7.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "wowbox64-0.4.0.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/wowbox64/wowbox64-0.4.0.tzst",
+   "sha256": "f005cf0cf33cd1a4868aaa788a5680fcab26977fd822cbc0321473073bdb8c08",
+   "size": 1194148,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/wowbox64-0.4.0.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "wowbox64-0.4.2.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/wowbox64/wowbox64-0.4.2.tzst",
+   "sha256": "90e6fefea2c9189c2556d6e0661ec4325dfc41fa82413a44a2485ae223e38efd",
+   "size": 1030182,
+   "licence": "MIT (Box64, built by GameNative from ptitSeb/box64)",
+   "licenceUrl": "https://github.com/ptitSeb/box64/blob/main/LICENSE",
+   "path": "windows-runtime/wowbox64-0.4.2.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "x86_64_input_dlls.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/x86_64_input_dlls.tzst",
+   "sha256": "b877ae67f6df33dd5a5a0ef2d7078be515cf8078a5dc49db51fc9395834c11ee",
+   "size": 415584,
+   "licence": "LGPL-2.1-or-later (Wine)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_10.0",
+    "exact": false,
+    "note": "Wine builtin DLLs (dinput, dinput8, xinput*, windows.gaming.input) as GameNative builds them; GameNative names no commit"
+   },
+   "path": "windows-runtime/x86_64_input_dlls.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "arm64ec_input_dlls.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/arm64ec_input_dlls.tzst",
+   "sha256": "a60e381bbac0c1565449fb03b948e8ec4075f39b9fe1bab859a9f150b43ebce9",
+   "size": 558954,
+   "licence": "LGPL-2.1-or-later (Wine)",
+   "licenceUrl": "https://gitlab.winehq.org/wine/wine/-/blob/master/COPYING.LIB",
+   "source": {
+    "repo": "GameNative/proton-wine",
+    "ref": "proton_10.0",
+    "exact": false,
+    "note": "Wine builtin DLLs (dinput, dinput8, xinput*, windows.gaming.input) as GameNative builds them; GameNative names no commit"
+   },
+   "path": "windows-runtime/arm64ec_input_dlls.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "redirect.tzst",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/assets/redirect.tzst",
+   "sha256": "99e578bff9884ad59ef8eec89b0df78d55103979eff8333ab4041bc3f11390ab",
+   "size": 33179,
+   "licence": "Proprietary: no licence accompanies the file and no source is published; re-hosted unmodified as GameNative ships it",
+   "licenceNote": "No source anywhere: Winlator/GameNative ship this binary without source (docs/SPEC.md 9 of droidtop).",
+   "path": "windows-runtime/redirect.tzst"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "libredirect-bionic-wx.so",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/modern/assets/libredirect-bionic-wx.so",
+   "sha256": "8f50d8af131dbf1eb008b8a9e48aca110f7cbc02e787959771317dd5c5c56e26",
+   "size": 71080,
+   "licence": "Proprietary: no licence accompanies the file and no source is published; re-hosted unmodified as GameNative ships it",
+   "licenceNote": "No source anywhere: Winlator/GameNative ship this binary without source (docs/SPEC.md 9 of droidtop).",
+   "path": "windows-runtime/libredirect-bionic-wx.so"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "libredirect-bionic-wx-minimal.so",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/modern/assets/libredirect-bionic-wx-minimal.so",
+   "sha256": "557aacc4a8b9e0dccb5e6d43aecca7b1723c0095f9bcb24fc5efe0db5390ff41",
+   "size": 38952,
+   "licence": "Proprietary: no licence accompanies the file and no source is published; re-hosted unmodified as GameNative ships it",
+   "licenceNote": "No source anywhere: Winlator/GameNative ship this binary without source (docs/SPEC.md 9 of droidtop).",
+   "path": "windows-runtime/libredirect-bionic-wx-minimal.so"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "libvortekrenderer.so",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/modern/jniLibs/arm64-v8a/libvortekrenderer.so",
+   "sha256": "d9d18ed58c410f9481c3661de188c68238be389b0cceaf0572163ada7fe8adad",
+   "size": 2228984,
+   "licence": "Proprietary: no licence accompanies the file and no source is published; re-hosted unmodified as GameNative ships it",
+   "licenceNote": "No source anywhere: Winlator/GameNative ship this binary without source (docs/SPEC.md 9 of droidtop).",
+   "path": "windows-runtime/libvortekrenderer.so"
+  },
+  {
+   "group": "windows-runtime",
+   "name": "libkgslshim.so",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/jniLibs/arm64-v8a/libkgslshim.so",
+   "sha256": "a0616b1e7847b104783298c84d93a1d880e3513016115ae75fb512de53bab034",
+   "size": 7520,
+   "licence": "Proprietary: no licence accompanies the file and no source is published; re-hosted unmodified as GameNative ships it",
+   "licenceNote": "No source anywhere: Winlator/GameNative ship this binary without source (docs/SPEC.md 9 of droidtop).",
+   "path": "windows-runtime/libkgslshim.so"
   }
  ]
 }
