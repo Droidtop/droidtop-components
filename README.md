@@ -89,5 +89,5 @@ When the repository secrets `CATALOG_SIGNING_KEY` (a PEM P-256 private key) and
 the leaf in `x5c`) over the exact bytes of `catalog.json`. The leaf names
 `urn:droidtop:catalog:Droidtop/droidtop-components`. `tools/sign_jws.sh` signs and
 `tools/verify_jws.py` checks it against the droidtop root's public key (`tools/droidtop-root.pub`)
-before anything is published. droidtop pins the droidtop root and refuses the catalog without a valid signature.
+before anything is published; from the 2026-11-04 key rotation until 2026-11-11T23:59:59Z it also accepts the previous root (`tools/droidtop-root-previous.pub`), the same window droidtop trusts it for. droidtop pins the droidtop root and refuses the catalog without a valid signature.
 Expiry dates are not checked.
