@@ -33,7 +33,7 @@ linked where its maker publishes it, or built here, unchanged, from its maker's 
 - The `windows-runtime` release: the files droidtop builds into its APK for the Windows runtime and has no
   source to build from in its own CI (Droidtop/tracker#857): GameNative's bundled Box64, FEXCore and WowBox64
   builds, its Wine input DLL sets, and the binaries that have no source anywhere (`redirect.tzst`,
-  `libredirect-bionic-wx*.so`, `libvortekrenderer.so`, `libkgslshim.so`). Re-hosted unmodified, `from`
+  `libredirect-bionic-wx*.so`, `libvortekrenderer.so`, `libwinlator_11.so`, `libkgslshim.so`). Re-hosted unmodified, `from`
   utkarshdalal/GameNative at `ce378f01`, which carries the identical bytes. droidtop's build fetches them by
   `path` against its own pin list (`runtime-windows/components.pin` there), so a file here is never replaced.
 

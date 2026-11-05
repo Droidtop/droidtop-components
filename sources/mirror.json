@@ -3640,6 +3640,16 @@
   },
   {
    "group": "windows-runtime",
+   "name": "libwinlator_11.so",
+   "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/modern/jniLibs/arm64-v8a/libwinlator_11.so",
+   "sha256": "ea1e6eac0aa4144e4780de210cc4618efafe541ebb4a3f8acc7a7fa97080bf9e",
+   "size": 67752,
+   "licence": "Proprietary: no licence accompanies the file and no source is published; re-hosted unmodified as GameNative ships it",
+   "licenceNote": "Winlator 11's prebuilt, as GameNative ships it: libvortekrenderer.so binds to it through its SONAME libwinlator.so and imports its ArrayList/RingBuffer code, which has no published source (droidtop docs/SPEC.md 9; Droidtop/tracker#857).",
+   "path": "windows-runtime/libwinlator_11.so"
+  },
+  {
+   "group": "windows-runtime",
    "name": "libkgslshim.so",
    "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/jniLibs/arm64-v8a/libkgslshim.so",
    "sha256": "a0616b1e7847b104783298c84d93a1d880e3513016115ae75fb512de53bab034",
