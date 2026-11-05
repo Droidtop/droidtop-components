@@ -3644,14 +3644,15 @@
    "from": "https://github.com/madewokherd/wine-mono/releases/download/wine-mono-10.4.1/wine-mono-10.4.1-x86.tar.xz",
    "sha256": "a16606ef0724202e6a6848ece6e0cbba64d11e2f11aefe744af1d93c6d9f99bb",
    "size": 39590692,
-   "licence": "Mixed free licences (Wine Mono: Mono's MIT and LGPL-2.1 parts, the .NET reference sources under MIT, FNA under MS-PL); see the COPYING files in the tarball",
+   "licence": "Mixed free licences per Wine Mono's COPYING: Mono parts GPL, LGPL and MIT X11 (all shipped parts LGPL or MIT X11 except SharpZipLib, GPL with an exception); FNA MS-PL and MIT, its libraries zlib; winforms, wpf and other libraries MIT; the rest MIT",
    "licenceUrl": "https://github.com/madewokherd/wine-mono/blob/wine-mono-10.4.1/COPYING",
    "source": {
     "repo": "madewokherd/wine-mono",
     "ref": "wine-mono-10.4.1",
     "exact": true
    },
-   "path": "windows-runtime/wine-mono-10.4.1-x86.tar.xz"
+   "path": "windows-runtime/wine-mono-10.4.1-x86.tar.xz",
+   "licenceNote": "The tarball carries no licence file; the terms are the source repository's COPYING at the release tag (licenceUrl)."
   },
   {
    "group": "windows-runtime",
