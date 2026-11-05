@@ -44,7 +44,9 @@ jobs:
           ref: ci/resign-rekey
           path: shared
       - name: Tools
-        run: python3 -m pip install --user --break-system-packages 'cryptography>=42'
+        # A venv, not --user: python3 -I skips user site-packages and would load the runner's system
+        # cryptography 41, which cannot parse droidtop's EKU arc (ParseError on every leaf).
+        run: python3 -m venv "$RUNNER_TEMP/rsenv" && "$RUNNER_TEMP/rsenv/bin/pip" install -q 'cryptography>=42'
       - name: Re-sign
         env:
           GH_TOKEN: ${{ github.token }}
@@ -64,8 +66,8 @@ jobs:
           unset PLUGIN_SIGNING_KEY PLUGIN_SIGNING_CERT
           # Public facts about the leaf this run signs with (a certificate is public; the key is never shown).
           openssl x509 -in "$W/leaf.pem" -noout -fingerprint -sha256 -subject -issuer -ext basicConstraints,keyUsage,extendedKeyUsage,subjectAltName || echo "leaf.pem: openssl cannot read it"
-          python3 -I -c 'import sys,cryptography; from cryptography import x509; c=x509.load_pem_x509_certificate(open(sys.argv[1],"rb").read()); print("cryptography", cryptography.__version__, "extensions", [e.oid.dotted_string for e in c.extensions])' "$W/leaf.pem" || echo "leaf.pem: python cannot parse its extensions"
-          rs() { python3 -I "$R/resign.py" "$@"; }
+          "$RUNNER_TEMP/rsenv/bin/python" -I -c 'import sys,cryptography; from cryptography import x509; c=x509.load_pem_x509_certificate(open(sys.argv[1],"rb").read()); print("cryptography", cryptography.__version__, "extensions", [e.oid.dotted_string for e in c.extensions])' "$W/leaf.pem" || echo "leaf.pem: python cannot parse its extensions"
+          rs() { "$RUNNER_TEMP/rsenv/bin/python" -I "$R/resign.py" "$@"; }
           result() { echo "RESULT|$GITHUB_REPOSITORY|$1|$2|$3" | tee -a "$GITHUB_STEP_SUMMARY"; }
           if [ -n "$KEY_JSON" ]; then rs check-keyjson "$KEY_JSON" "$ROOTPEM" || exit 1; fi
           if [ "$TAGS" = all ]; then
