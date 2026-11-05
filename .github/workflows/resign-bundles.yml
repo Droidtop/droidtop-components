@@ -1,0 +1,108 @@
+# Re-signs published droidtop plugin bundle releases in place under a repository's new signing key
+# (signing-key rotation 2026-11-04, Droidtop/tracker#876). One mechanism for every plugin repository:
+# a dispatch-only caller in each plugin repository passes its own PLUGIN_SIGNING_KEY and
+# PLUGIN_SIGNING_CERT secrets to this workflow. Same tag, same release; the re-signed bundle replaces
+# the old asset (gh release upload --clobber). manifest.json and every payload byte stay exactly as
+# published (tools/resign/resign.py checks it); only manifest.jws, manifest.sig and origin.cert change.
+# For a gamegrab repository the release's droidtop-plugin-key.json is replaced by the one in the
+# caller's checkout (the new gamegrab root).
+name: Re-sign plugin bundles
+
+on:
+  workflow_call:
+    inputs:
+      tags:
+        description: 'Release tags separated by commas, or "all"'
+        type: string
+        default: all
+      root:
+        description: 'Root the leaf must chain to: droidtop or gamegrab'
+        type: string
+        required: true
+      key_json:
+        description: 'Path in the caller checkout of the droidtop-plugin-key.json that replaces the release asset of that name; empty for none'
+        type: string
+        default: ''
+    secrets:
+      PLUGIN_SIGNING_KEY:
+        required: true
+      PLUGIN_SIGNING_CERT:
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  resign:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: Droidtop/droidtop-components
+          ref: ci/resign-rekey
+          path: shared
+      - name: Tools
+        run: python3 -m pip install --user --break-system-packages 'cryptography>=42'
+      - name: Re-sign
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PLUGIN_SIGNING_KEY: ${{ secrets.PLUGIN_SIGNING_KEY }}
+          PLUGIN_SIGNING_CERT: ${{ secrets.PLUGIN_SIGNING_CERT }}
+          TAGS: ${{ inputs.tags }}
+          ROOT: ${{ inputs.root }}
+          KEY_JSON: ${{ inputs.key_json }}
+        run: |
+          set -u
+          umask 077
+          R="$GITHUB_WORKSPACE/shared/tools/resign"
+          ROOTPEM="$R/roots/$ROOT.pub.pem"
+          W="$RUNNER_TEMP/resign"; mkdir -p "$W"
+          printf '%s\n' "$PLUGIN_SIGNING_KEY" > "$W/key.pem"
+          printf '%s\n' "$PLUGIN_SIGNING_CERT" > "$W/leaf.pem"
+          unset PLUGIN_SIGNING_KEY PLUGIN_SIGNING_CERT
+          rs() { python3 -I "$R/resign.py" "$@"; }
+          result() { echo "RESULT|$GITHUB_REPOSITORY|$1|$2|$3" | tee -a "$GITHUB_STEP_SUMMARY"; }
+          if [ -n "$KEY_JSON" ]; then rs check-keyjson "$KEY_JSON" "$ROOTPEM" || exit 1; fi
+          if [ "$TAGS" = all ]; then
+            gh release list -R "$GITHUB_REPOSITORY" --limit 500 --json tagName --jq '.[].tagName' > "$W/tags"
+          else
+            echo "$TAGS" | tr ',' '\n' | sed 's/^ *//;s/ *$//' | grep . > "$W/tags"
+          fi
+          failed=0; n=0
+          while IFS= read -r tag <&3; do
+            n=$((n+1)); d="$W/r$n"; mkdir -p "$d/old" "$d/new" "$d/back"
+            assets=$(gh release view "$tag" -R "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name') || { result "$tag" FAILED "cannot read the release"; failed=1; continue; }
+            bundles=$(echo "$assets" | grep '\.droidplugin\.tar\.xz$' || true)
+            if [ -z "$bundles" ]; then result "$tag" "no bundle" "assets: $(echo "$assets" | tr '\n' ' ')"; continue; fi
+            ok=1; detail=""
+            for b in $bundles; do
+              v=""; p=""; v2=""; p2=""
+              if ! gh release download "$tag" -R "$GITHUB_REPOSITORY" -p "$b" -D "$d/old" --clobber; then ok=0; detail="$detail $b: download failed;"; continue; fi
+              if rs verify "$d/old/$b" "$ROOTPEM" >/dev/null 2>&1; then detail="$detail $b: already verifies under the new root;"; continue; fi
+              if ! out=$(rs resign "$d/old/$b" "$d/new/$b" "$W/key.pem" "$W/leaf.pem" 2>&1); then ok=0; detail="$detail $b: re-sign failed;"; continue; fi
+              if ! v=$(rs verify "$d/new/$b" "$ROOTPEM" 2>&1) || ! p=$(rs same-payload "$d/old/$b" "$d/new/$b" 2>&1); then ok=0; detail="$detail $b: pre-upload check failed: $v $p;"; continue; fi
+              if ! gh release upload "$tag" "$d/new/$b" -R "$GITHUB_REPOSITORY" --clobber; then ok=0; detail="$detail $b: upload failed;"; continue; fi
+              if ! gh release download "$tag" -R "$GITHUB_REPOSITORY" -p "$b" -D "$d/back" --clobber \
+                 || ! v2=$(rs verify "$d/back/$b" "$ROOTPEM" 2>&1) || ! p2=$(rs same-payload "$d/old/$b" "$d/back/$b" 2>&1); then
+                ok=0; detail="$detail $b: uploaded but the download-back check failed: $v2 $p2;"; continue
+              fi
+              detail="$detail $b: $v2 ($p2);"
+            done
+            if [ -n "$KEY_JSON" ] && echo "$assets" | grep -qx 'droidtop-plugin-key.json'; then
+              if gh release upload "$tag" "$KEY_JSON" -R "$GITHUB_REPOSITORY" --clobber \
+                 && gh release download "$tag" -R "$GITHUB_REPOSITORY" -p droidtop-plugin-key.json -D "$d/back" --clobber \
+                 && cmp -s "$d/back/droidtop-plugin-key.json" "$KEY_JSON"; then
+                detail="$detail droidtop-plugin-key.json replaced;"
+              else ok=0; detail="$detail droidtop-plugin-key.json replacement failed;"; fi
+            fi
+            if [ "$ok" = 1 ]; then result "$tag" "re-signed+verified" "$detail"; else result "$tag" FAILED "$detail"; failed=1; fi
+            rm -f -- "$d"/old/* "$d"/new/* "$d"/back/*
+            sleep 1
+          done 3< "$W/tags"
+          rm -f -- "$W/key.pem" "$W/leaf.pem"
+          exit "$failed"
+      - name: Remove the key files
+        if: always()
+        run: rm -f -- "$RUNNER_TEMP/resign/key.pem" "$RUNNER_TEMP/resign/leaf.pem"
