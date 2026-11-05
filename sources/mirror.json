@@ -3640,6 +3640,21 @@
   },
   {
    "group": "windows-runtime",
+   "name": "wine-mono-10.4.1-x86.tar.xz",
+   "from": "https://github.com/madewokherd/wine-mono/releases/download/wine-mono-10.4.1/wine-mono-10.4.1-x86.tar.xz",
+   "sha256": "a16606ef0724202e6a6848ece6e0cbba64d11e2f11aefe744af1d93c6d9f99bb",
+   "size": 39590692,
+   "licence": "Mixed free licences (Wine Mono: Mono's MIT and LGPL-2.1 parts, the .NET reference sources under MIT, FNA under MS-PL); see the COPYING files in the tarball",
+   "licenceUrl": "https://github.com/madewokherd/wine-mono/blob/wine-mono-10.4.1/COPYING",
+   "source": {
+    "repo": "madewokherd/wine-mono",
+    "ref": "wine-mono-10.4.1",
+    "exact": true
+   },
+   "path": "windows-runtime/wine-mono-10.4.1-x86.tar.xz"
+  },
+  {
+   "group": "windows-runtime",
    "name": "libkgslshim.so",
    "from": "https://raw.githubusercontent.com/utkarshdalal/GameNative/ce378f01894eb7cac2eff38b6132306f5489ff8b/app/src/main/jniLibs/arm64-v8a/libkgslshim.so",
    "sha256": "a0616b1e7847b104783298c84d93a1d880e3513016115ae75fb512de53bab034",
