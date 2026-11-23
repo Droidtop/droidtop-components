@@ -1,6 +1,6 @@
 # droidtop-components
 
-The Windows-runtime components [droidtop](https://github.com/Droidtop/droidtop) downloads on
+The Windows-runtime components [droidtop](https://github.com/mytop-project/droidtop) downloads on
 demand: Wine and Proton builds, DXVK, VKD3D-Proton, FEXCore, Box64 and WowBox64, Adreno driver
 builds (Turnip and others), the runtime's base system and the tools it runs (innoextract). This repository
 mirrors upstream files, and builds from upstream source where no usable build exists (the owner,
@@ -16,11 +16,11 @@ linked where its maker publishes it, or built here, unchanged, from its maker's 
 - `sources/feeds.json`: every source droidtop knows: this mirror, droidtop's own Wine builds
   (any Droidtop repository named for Wine or Proton; new releases appear by themselves),
   third-party release feeds, and Steam. Feeds are linked, not re-hosted.
-- `catalog.json`, on the [`catalog` release](https://github.com/Droidtop/droidtop-components/releases/tag/catalog):
+- `catalog.json`, on the [`catalog` release](https://github.com/mytop-project/droidtop-components/releases/tag/catalog):
   what droidtop reads. Written daily by `.github/workflows/catalog.yml`. Every item and file carries
   its SHA-256 and `urls`: our copy first, then its makers' copies; droidtop tries them in order and
   accepts only bytes with that SHA-256. The catalog is attested with a Sigstore build provenance
-  (`gh attestation verify catalog.json -R Droidtop/droidtop-components`) and, once the signing
+  (`gh attestation verify catalog.json -R mytop-project/droidtop-components`) and, once the signing
   secrets exist, signed (below).
 
 - `tools/<name>/build.sh` and `.github/workflows/<name>.yml`: a build from upstream source, for what no maker
@@ -31,7 +31,7 @@ linked where its maker publishes it, or built here, unchanged, from its maker's 
   where `sources/mirror.json` lists them like any mirrored file.
 
 - The `windows-runtime` release: the files droidtop builds into its APK for the Windows runtime and has no
-  source to build from in its own CI (Droidtop/tracker#857): GameNative's bundled Box64, FEXCore and WowBox64
+  source to build from in its own CI (mytop-project/tracker#857): GameNative's bundled Box64, FEXCore and WowBox64
   builds, its Wine input DLL sets, and the binaries that have no source anywhere (`redirect.tzst`,
   `libredirect-bionic-wx*.so`, `libvortekrenderer.so`, `libwinlator_11.so`, `libkgslshim.so`). Re-hosted unmodified, `from`
   utkarshdalal/GameNative at `ce378f01`, which carries the identical bytes. droidtop's build fetches them by

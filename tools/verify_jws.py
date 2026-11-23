@@ -12,7 +12,7 @@ from cryptography.hazmat.primitives.asymmetric import ec, padding, utils
 EKU_BASE = "2.25.230248497294207031301727532441854392946"
 EKU = {"droidtop-plugin+jws": EKU_BASE + ".1", "droidtop-catalog+jws": EKU_BASE + ".2"}
 
-# Key rotation 2026-11-04 (Droidtop/tracker#876, #550): droidtop-root.pub is the new root. The root it replaced,
+# Key rotation 2026-11-04 (mytop-project/tracker#876, #550): droidtop-root.pub is the new root. The root it replaced,
 # droidtop-root-previous.pub beside it, is also accepted until the same instant droidtop itself stops trusting it
 # (DroidtopSigningRoot.OLD_ROOT_EXPIRES_AT): the owner's "Pin the old key for 7 days, then expire it".
 PREVIOUS_ROOT_EXPIRES_AT = datetime.datetime(2026, 11, 11, 23, 59, 59, tzinfo=datetime.timezone.utc)

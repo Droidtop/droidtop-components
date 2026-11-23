@@ -5,7 +5,7 @@
 # by the droidtop root; droidtop refuses the catalog without it), attests it
 # (a Sigstore-signed build provenance) and publishes it on the "catalog" release, where droidtop
 # reads it:
-#   https://github.com/Droidtop/droidtop-components/releases/download/catalog/catalog.json
+#   https://github.com/mytop-project/droidtop-components/releases/download/catalog/catalog.json
 # Daily, so a new upstream release shows up in droidtop by itself.
 name: Mirror and catalog
 

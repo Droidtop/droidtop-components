@@ -3317,7 +3317,7 @@
   {
    "group": "tools",
    "name": "innoextract-1.9-arm64-v8a",
-   "from": "https://github.com/Droidtop/droidtop-components/releases/download/tools/innoextract-1.9-arm64-v8a",
+   "from": "https://github.com/mytop-project/droidtop-components/releases/download/tools/innoextract-1.9-arm64-v8a",
    "sha256": "e6cf692c8816118d93ba47d0d6c08ea6ff8211c643ff062ed2e228077e215ee0",
    "size": 1406800,
    "licence": "zlib (innoextract 1.9), statically linking Boost 1.84 (BSL-1.0), xz 5.8.1 (0BSD), zlib 1.3.1 (zlib) and bzip2 1.0.8 (bzip2 licence, BSD-style)",
@@ -3333,7 +3333,7 @@
   {
    "group": "tools",
    "name": "innoextract-1.9-x86_64",
-   "from": "https://github.com/Droidtop/droidtop-components/releases/download/tools/innoextract-1.9-x86_64",
+   "from": "https://github.com/mytop-project/droidtop-components/releases/download/tools/innoextract-1.9-x86_64",
    "sha256": "0b23bd512a6fbbef6a709c97c20f7b8d034761fc4186b18f02c201b9b2a77b71",
    "size": 1382064,
    "licence": "zlib (innoextract 1.9), statically linking Boost 1.84 (BSL-1.0), xz 5.8.1 (0BSD), zlib 1.3.1 (zlib) and bzip2 1.0.8 (bzip2 licence, BSD-style)",
@@ -3661,7 +3661,7 @@
    "sha256": "ea1e6eac0aa4144e4780de210cc4618efafe541ebb4a3f8acc7a7fa97080bf9e",
    "size": 67752,
    "licence": "Proprietary: no licence accompanies the file and no source is published; re-hosted unmodified as GameNative ships it",
-   "licenceNote": "Winlator 11's prebuilt, as GameNative ships it: libvortekrenderer.so binds to it through its SONAME libwinlator.so and imports its ArrayList/RingBuffer code, which has no published source (droidtop docs/SPEC.md 9; Droidtop/tracker#857).",
+   "licenceNote": "Winlator 11's prebuilt, as GameNative ships it: libvortekrenderer.so binds to it through its SONAME libwinlator.so and imports its ArrayList/RingBuffer code, which has no published source (droidtop docs/SPEC.md 9; mytop-project/tracker#857).",
    "path": "windows-runtime/libwinlator_11.so"
   },
   {

@@ -7,7 +7,7 @@ import re
 import subprocess
 import urllib.parse
 
-REPO = os.environ.get('GITHUB_REPOSITORY', 'Droidtop/droidtop-components')
+REPO = os.environ.get('GITHUB_REPOSITORY', 'mytop-project/droidtop-components')
 GH_RELEASE_URL = re.compile(r'^https://github\.com/([^/]+/[^/]+)/releases/download/([^/]+)/([^/]+)$')
 
 

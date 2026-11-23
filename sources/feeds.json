@@ -7,7 +7,7 @@
    "kind": "mirror",
    "engine": "bionic",
    "defaultEnabled": true,
-   "homepage": "https://github.com/Droidtop/droidtop-components",
+   "homepage": "https://github.com/mytop-project/droidtop-components",
    "about": "Every build droidtop offered through GameNative's component list, re-hosted unmodified"
   },
   {
@@ -16,9 +16,9 @@
    "kind": "releases",
    "engine": "bionic",
    "defaultEnabled": true,
-   "homepage": "https://github.com/Droidtop",
+   "homepage": "https://github.com/mytop-project",
    "about": "Wine and Proton built by droidtop's own CI; every release of a Droidtop repository named for Wine or Proton",
-   "discover": {"org": "Droidtop", "name": "wine|proton"},
+   "discover": {"org": "mytop-project", "name": "wine|proton"},
    "assets": "\\.wcp$",
    "format": "wcp",
    "releases": 6
